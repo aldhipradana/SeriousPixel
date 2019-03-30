@@ -1,0 +1,117 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Serious Pixel</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
+    </head>
+    <body>
+        <!-- [ Normal Navbar ] -->
+        <nav class="top">
+            <a href="#" class="logo">Dark Poseidon</a>
+            <ul>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">Price List</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- [ Scrolled Navbar ] -->
+        <nav class="top fixed">
+            <a href="#" class="logo">D</a>
+            <ul>
+                <ul>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#">Price List</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+        </ul>
+    </nav>
+
+    <header class="codeconveyHeader">
+        <!-- <h1>Animated Sticky Header</h1> -->
+        <span>View Our Work</span>
+    </header>
+    <section class="IntroSection">
+        <p>Great Animated header with navigation menu bar. The navigation bar is sticky
+            and when you scroll the page, it will comes down with the page. We build some
+            nice looking menus too. The color combination is also different in both
+            scenario. Like the normall navigation and the sticky one.
+            <br>
+            <br>
+            <strong>Let's take a look.</strong>
+        </p>
+    </section>
+    <section class="IntroSection blue">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non sem eu
+            dolor hendrerit rutrum. Curabitur a luctus tortor. Nullam et fermentum augue.
+            Phasellus aliquet augue non est ultricies consequat.
+            <br>
+            <br>
+            <strong>Animation You Need.</strong>
+        </p>
+    </section>
+    <section class="IntroSection white">
+        <p>Vestibulum tincidunt ut ipsum eget lacinia. Cras lobortis, magna id ultricies
+            dictum, dui massa dictum neque, porta dapibus lectus lectus vel massa.
+            Pellentesque elementum quam posuere porta pulvinar.
+            <br>
+            <br>
+            <strong>Awesome Design Idea.</strong>
+        </p>
+    </section>
+    <footer class="footer">
+        <p>@ Copyright 2017 Animated Header by Codeconvey</p>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type='text/javascript'>
+        //<![CDATA[
+        $(document).ready(function () {
+            var $body = $(document.body);
+            var _SCROLL_FIXED_CUTOFF = _SCROLL_FIXED_CUTOFF || (
+                    $(window).height() >= 825
+                        ? 300
+                        : 75
+                ),
+                _HEADER_HEIGHT = _HEADER_HEIGHT || 825;
+            $(window).scroll(function (e) {
+                if ($('nav.top[data-no-scroll]').length) 
+                    return;
+                if (this.pageYOffset >= _SCROLL_FIXED_CUTOFF && !$body.hasClass('scrolled')) {
+                    $body.addClass('scrolled');
+                } else if (this.pageYOffset < _SCROLL_FIXED_CUTOFF && $body.hasClass('scrolled')) {
+                    $body.removeClass('scrolled');
+                }
+                if (this.pageYOffset >= _HEADER_HEIGHT) {
+                    _header_carousel_active = false;
+                } else {
+                    _header_carousel_active = true;
+                }
+            });
+        });
+
+        //]]>
+    </script>
+</body>
+</html>
