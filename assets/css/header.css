@@ -1,0 +1,139 @@
+
+/**
+    HEADER STYLING HERE
+*/
+
+nav.top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 99;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: -webkit-transform 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 420ms cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+nav.top a {
+    font-family: 'Montserrat';
+}
+/* Fixed Navbar*/
+
+.scrolled nav.top {
+    -webkit-transform: translate3d(0, -70px, 0);
+    transform: translate3d(0, -70px, 0);
+}
+
+.top.fixed > ul {
+    margin: 0;
+}
+
+nav.top.fixed {
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.09804) 0 2px 4px;
+}
+
+.scrolled nav.top.fixed {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+nav.top.fixed ul a {
+  
+}
+
+nav .logo {
+    color: #fff;
+    float: left;
+    font-family: "Lobster", cursive;
+    font-size: 25px;
+    height: 42px;
+    margin: 20px 0 0 20px;
+}
+
+.top.fixed > .logo {
+    background: #000 none repeat scroll 0 0;
+    border-radius: 25%;
+    color: #fff;
+    float: left;
+    font-family: "Lobster", cursive;
+    font-size: 40px;
+    height: 52px;
+    margin: 10px 0 0 20px;
+    padding: 0;
+    text-align: center;
+    width: 52px;
+}
+
+/* menu style */
+
+nav.top ul {
+    list-style-type: none;
+    margin: 0 20px 0 0;
+    padding: 0;
+    float: right;
+    line-height: 4.375rem;
+}
+
+nav.top ul li {
+    display: inline-block;
+}
+
+nav.top ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    margin-left: 9px;
+    position: relative;
+    cursor: pointer;
+    line-height: 1em;
+    padding: 8px 7px 15px;
+    transition: 0.3s all ease;
+}
+
+nav.top ul li a:hover {
+    opacity: 1;
+    border-bottom: 3px #fff solid;
+}
+.codeconveyHeader {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    padding: 4em 1em;
+    position: relative;
+    text-align: center;
+    background: url("../images/bg-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.codeconveyHeader span {
+    bottom: 45px;
+    position: absolute;
+}
+.codeconveyHeader span a {
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 1px solid #fff;
+    transition: ease 0.5s;
+    color: #fff;
+    font-family: "MontserratExtraLight";
+    font-size: 25px;
+}
+.codeconveyHeader span a:hover {
+    border-color: #000;
+    background-color: #000;
+    mix-blend-mode: multiply;
+}
