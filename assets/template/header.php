@@ -12,7 +12,7 @@
 
 <body>
     <!-- [ Normal Navbar ] -->
-    <nav class="top">
+    <nav class="top not-fixed">
         <a href="#" class="logo">Serious Pixel</a>
         <ul>
             <li>
