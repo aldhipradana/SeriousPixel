@@ -81,7 +81,7 @@ section.IntroSection-2 p {
     letter-spacing: 1px;
     padding: 350px 0 50px;
     text-align: center;
-    box-shadow: inset 3px 4px 5px #000;
+    box-shadow: inset 0px 2px 20px 0px #000;
 }
 section.IntroSection-3 {
     text-align: center;

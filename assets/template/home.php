@@ -15,6 +15,6 @@
 </section>
 
 <section class="IntroSection-3">
-    <img src="assets/images/picture1.jpg" alt="image 4" class="">
-    <img src="assets/images/picture2.jpg" alt="image 5" class="">
+    <img src="assets/images/picture1.jpg" alt="image 4" class="bw">
+    <img src="assets/images/picture2.jpg" alt="image 5" class="bw">
 </section>

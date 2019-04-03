@@ -9,6 +9,10 @@
   }
   .container .sp-credit p span{
     text-decoration: underline;
+    cursor: pointer;
+  }
+  .container .sp-credit p span:hover{
+    text-decoration: none;
   }
   .container .sp-social-container{
     text-align: center;
