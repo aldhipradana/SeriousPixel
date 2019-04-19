@@ -23,6 +23,9 @@
                 case 'about':
                     include_once('assets\template\page\contact.php');
                     break;
+                default:
+                    include_once('assets\template\page\home.php');  
+                    break;
             }
         }else {          
         }
