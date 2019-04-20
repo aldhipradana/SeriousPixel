@@ -1,0 +1,30 @@
+
+/* FOOTER */
+.container .sp-credit{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .container .sp-credit{
+    font-family: "Montserrat";
+  }
+  .container .sp-credit p span{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .container .sp-credit p span:hover{
+    text-decoration: none;
+  }
+  .container .sp-social-container{
+    text-align: center;
+    padding: 50px 0 20px;
+  }
+  .container .sp-social-container i{
+    font-size: 28px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    position: relative;
+  }
+  .container .sp-social-container i:hover{
+    font-size: 32px;
+  }
