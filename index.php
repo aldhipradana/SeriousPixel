@@ -1,6 +1,6 @@
 <html lang="en">
-  
-    <?php
+
+<?php
         include_once('assets\template\header.php');
 
 
@@ -22,12 +22,15 @@
                     break;
                 case 'about':
                     include_once('assets\template\page\contact.php');
+                    break;  
+                case 'login':
+                    include_once('assets\template\login.php');
                     break;
                 default:
                     include_once('assets\template\page\home.php');  
                     break;
             }
-        }else {          
+        } else {          
         }
 
 
@@ -35,5 +38,5 @@
 
         include_once('assets\template\footer.php')
     ?>
-    
+
 </html>
