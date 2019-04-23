@@ -45,14 +45,14 @@
 
 ### DESIGN PATTERN ##
 
-UNTUK SECTION DI BODY GUNAKAN PATTERN SEPERTI :
-section.NamaPageSection-Section-KeBerapa, diikuti dengan row column.
-Contoh : Halaman About
-Section.AboutSection-1 .row .column
-Usahakan untuk styling pada bagian column dulu, jika terpaksa/dibutuhkan baru dilanjutkan ke columnnya lalu ke section.
-
-Penamaan/Penambahan Image : 
-GUNAKAN PATTERN SEPERTI 
-bg-NamaPage-NamaSectionYangMenggunakan
+UNTUK SECTION DI BODY GUNAKAN PATTERN SEPERTI :  
+section.NamaPageSection-Section-KeBerapa, diikuti dengan row column    
+Contoh : Halaman About  
+Section.AboutSection-1 .row .column  
+Usahakan untuk styling pada bagian column dulu, jika terpaksa/dibutuhkan baru dilanjutkan ke columnnya lalu ke section.  
+  
+Penamaan/Penambahan Image :   
+GUNAKAN PATTERN SEPERTI   
+bg-NamaPage-NamaSectionYangMenggunakan  
 
 
