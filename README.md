@@ -54,5 +54,6 @@ Usahakan untuk styling pada bagian column dulu, jika terpaksa/dibutuhkan baru di
 Penamaan/Penambahan Image :   
 GUNAKAN PATTERN SEPERTI   
 bg-NamaPage-NamaSectionYangMenggunakan  
+image-NamaPage-NamaSectionYangMenggunakan  
 
 
