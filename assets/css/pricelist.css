@@ -1,0 +1,75 @@
+section.Sectionprice {
+    background-color: #f3f4f4;
+    text-align: center;
+}
+section.Sectionprice .row .column {
+    padding: 50% 50%;
+}
+section.Sectionprice-box {
+    
+    margin-left: -480px;
+    margin-top: -900px;
+    width: 1000px;
+    height: 450px;
+    background-color: #ffffff;
+    
+}
+section.Sectionprice-text h2 {
+
+    font-family: "Montserrat";
+    padding-top: 30px;
+    color: #3f4349;
+}
+section.Sectionprice-text h3 {
+
+    font-family: "Montserrat";
+    margin-top: -220px;
+    margin-left: -450px;
+    color: #3f4349;
+}
+section.Sectionprice-text p{
+    font-family: "Montserrat";
+    font-size: 11pt;
+    margin-top: 40px;
+    margin-left: -453px;
+    color: #3f4349;
+}
+
+section.Sectionprice-text-2 h3 {
+
+    font-family: "Montserrat";
+    margin-top: -340px;
+    margin-right: -450px;
+    color: #3f4349;
+}
+section.Sectionprice-text-2 p{
+    font-family: "Montserrat";
+    font-size: 11pt;
+    margin-top: 40px;
+    margin-right: -453px;
+    color: #3f4349;
+}
+
+
+
+/*  */
+
+section.Sectionprice-box-2 {
+    
+    margin-left: 472px;
+    margin-top: -1350px;
+    width: 1000px;
+    height: 450px;
+    background-color: #ffffff;
+    
+}
+section.Sectionprice-text-2 h2 {
+
+    font-family: "Montserrat";
+    padding-top: 30px;
+    padding-left: 285px;
+    color: #3f4349;
+}
+
+
+
