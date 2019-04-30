@@ -1,69 +1,119 @@
-<head>
-   
-    <style type="text/css">
-        @import url(/SeriousPixel/assets/css/pricelist.css);
-    </style>
-
-</head>
-
-<section class="Sectionprice">
+<section class="Pricesection">
+   <!-- WEDDING -->
     <div class="row">
         <div class="column">
-
-         <!-- WEDDING    -->
-        <section class="Sectionprice-box">
-           <section class="Sectionprice-text h2">
-               <h2>WEDDING PHOTOGRAPHY PACKAGES</h2>
-               <div style="background-color:#3f4349; width:750px; height:2px; margin-top:30px; margin-left:115px"></div>
-               <div style="background-color:#9fa1a4; width:2px; height:150px; margin-top:87px; margin-left:495px"></div>
-            </section>
-           
-            <section class="Sectionprice-text h3">
-                   <h3>Wedding<br>Silver Package</h3>
-                   <div style="background-color:#d6b068; width:60px; height:4px; margin-top:10px; margin-left:240px"></div> 
-            </section>
-            <section class="Sectionprice-text p">
+            <div class="box">
+                <h2>WEDDING PHOTOGRAPHY PACKAGE</h2>
+                <div style="background-color:#3f4349; width:750px; height:2px; margin: auto"></div>
+                
+            <div class="column-2">
+            <h3>Wedding<br>Silver Package</h3>
+                <h3>Wedding<br>Gold Package</h3>
+            </div>
+            <div class="column-4">
+            <div style="background-color:#d6b068; width:60px; height:4px; margin: 0 0 0 212"></div>
+            <div style="background-color:#d6b068; width:60px; height:4px; margin: 0 214"></div>
+            </div>    
+            <div class="column-3">
                 <p>Up to 3 Hours of Photography
                     <br>2 Wedding Photographers
                     <br>DVD of All Images
                     <br>Maximum 300 Images
-                    </p>
-                    <p style="font-size:20pt; margin-top:10px">$599</p>
-                    <div style="background-color:#d6b068; width:110px; height:40px; margin-top:20px; margin-left:215px; padding-top:10px; font-family: Montserrat">Get Silver</div>
-            </section>
-            </section>
-
-            <section class="Sectionprice-text-2 h3">
-                   <h3>Wedding<br>Gold Package</h3>
-                   <div style="background-color:#d6b068; width:60px; height:4px; margin-top:10px; margin-left:192px"></div> 
-            </section>
-            <section class="Sectionprice-text-2 p">
-                <p>Up to 5 Hours of Photography
+                    <br><br>
+                    <p style="font-size:24">$599</p>
+                </p>
+                    <p>Up to 5 Hours of Photography 
                     <br>2 Wedding Photographers
                     <br>DVD of All Images
-                    <br>Maximum 300 - 700 Images
-                    </p>
-                    <p style="font-size:20pt; margin-top:9px">$1199</p>
-                    <div style="background-color:#d6b068; width:110px; height:40px; margin-top:20px; margin-left:172px; padding-top:10px; font-family: Montserrat">Get Gold</div>
-
-            </section>
-            </section>
-            <!--  -->
-
-            <!-- FAMILY -->
-
-            <section class="Sectionprice-box-2">
-           <section class="Sectionprice-text-2 h2">
-               <h2>FAMILY PHOTOSHOOT PACKAGES</h2>
-               <div style="background-color:#3f4349; width:750px; height:2px; margin-top:30px; margin-left:115px"></div>
-               <div style="background-color:#9fa1a4; width:2px; height:150px; margin-top:87px; margin-left:495px"></div>
-            </section>
-            </section>
-
-
-
-            <!--  -->
-
-      </div>
+                    <br>Maximum 300-700 Images
+                    <br><br>
+                    <p style="font-size:24">$1199</p></p>
+            </div>  
+                <div class="column-5">
+                    <a href=""><p>Get Silver</p></a>
+                    <a href=""><p>Get Gold</p></a>
+                </div>
+            </div>
+        </div>
     </div>
+    <!--  -->
 
+      <!-- Family -->
+      <div class="row">
+        <div class="column">
+            <div class="box">
+                <h2>FAMILY PHOTOSHOOT PACKAGE</h2>
+                <div style="background-color:#3f4349; width:750px; height:2px; margin: auto"></div>
+                
+            <div class="column-2">
+            <h3>Family<br>Silver Package</h3>
+                <h3>Family<br>Gold Package</h3>
+            </div>
+            <div class="column-4">
+            <div style="background-color:#d6b068; width:60px; height:4px; margin: 0 0 0 212"></div>
+            <div style="background-color:#d6b068; width:60px; height:4px; margin: 0 214"></div>
+            </div>    
+            <div class="column-3">
+                <p>Up to 2 Hours of Photography
+                    <br>2 Professional Photographers
+                    <br>Photo in 1 Location
+                    <br>Maximum 300 Images
+                    <br><br>
+                    <p style="font-size:24">$399</p>
+                </p>
+                    <p>Up to 5 Hours of Photography 
+                    <br>2 Professional Photographers
+                    <br>Photo in 2 Location
+                    <br>Between 300 - 700 Images
+                    <br><br>
+                    <p style="font-size:24">$1099</p></p>
+            </div>  
+                <div class="column-5">
+                    <a href=""><p>Get Silver</p></a>
+                    <a href=""><p>Get Gold</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+          <!-- BRANDING -->
+          <div class="row">
+        <div class="column">
+            <div class="box">
+                <h2>BRANDING PHOTOSHOOT PACKAGE</h2>
+                <div style="background-color:#3f4349; width:750px; height:2px; margin: auto"></div>
+                
+            <div class="column-2">
+            <h3>Branding<br>Silver Package</h3>
+                <h3>Branding<br>Gold Package</h3>
+            </div>
+            <div class="column-4">
+            <div style="background-color:#d6b068; width:60px; height:4px; margin: 0 0 0 212"></div>
+            <div style="background-color:#d6b068; width:60px; height:4px; margin: 0 214"></div>
+            </div>    
+            <div class="column-3">
+                <p>Consultation + brand strategy review
+                    <br>On-location 90 min photoshoot
+                    <br>Professional editing of best images
+                    <br>Online gallery of 15 digital images
+                    <br><br>
+                    <p style="font-size:24">$699</p>
+                </p>
+                    <p>Consultation + brand strategy review 
+                    <br>On-location 4 hours photoshoot
+                    <br>Professional editing of best images
+                    <br>Online gallery of 25 digital images
+                    <br><br>
+                    <p style="font-size:24">$1499</p></p>
+            </div>  
+                <div class="column-5">
+                    <a href=""><p>Get Silver</p></a>
+                    <a href=""><p>Get Gold</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+</section>

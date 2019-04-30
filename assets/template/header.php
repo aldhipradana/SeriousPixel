@@ -7,6 +7,7 @@
                     <link rel="stylesheet" href="assets\css\header.css">
                         <link rel="stylesheet" href="assets\css\home.css">
                         <link rel="stylesheet" href="assets\css\about.css">
+                        <link rel="stylesheet" href="assets\css\pricelist.css">
                                 <link rel="stylesheet" href="assets\css\footer.css">
                                     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
                                     <link href="assets\fontawesome\css\all.css" rel="stylesheet"></head>
