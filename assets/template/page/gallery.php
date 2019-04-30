@@ -23,40 +23,107 @@
         margin-block-start: unset;
         margin-block-end: unset;
         margin: auto;
+        padding-bottom: 20px;
     }
 
     section.GallerySection-2{
-        background: #000;
+        background: #f3f4f4;
         text-align: center;
         position: center;
-        
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     section.GallerySection-2 .row-1 {
         background: #fff;
         width: 900px;
-        margin : auto;
-        
+        margin : 0 auto 20px;
+        height : auto;
+        padding : 20px 20px 0px 20px;
     }
 
-    section.GallerySection-2 .row-1 h3{
+    section.GallerySection-2 .row-1 .column{
+        padding : 20px;
         text-align: center;
     }
+
+    section.GallerySection-2 .row-1 .column h3{
+        letter-spacing: 2px; 
+        font-family:"Montserrat";
+        text-align: center;
+        color: #d6b068;
+    }
+    section.GallerySection-2 .row-1 .column p{
+        letter-spacing: 2px; 
+        font-family:"Montserrat";
+        text-align: center;
+        color: #000;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 20px 0 0 0;
+    }
+    section.GallerySection-2 .row-1 .column p.read a{
+        letter-spacing: 2px; 5
+        font-family:"Montserrat";
+        text-align: center;
+        font-size: 12px;
+        padding: 20px 0 0 0;
+        color: #d6b068;
+    }
     
-    section.GallerySection-2 .row-1 .column.image{
-        background: url()
+    section.GallerySection-2 .row-1 a .column.image {
+        background-image: url("assets/images/Gallery-1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height : 300px;
+        height : 100%;  
+    }
+    section.GallerySection-2 .row-2 {
+        background: #fff;
+        width: 900px;
+        margin : 0 auto;
+        height : auto;
+        padding : 20px 20px 0px 20px;
     }
 
-    /* section.GallerySection-2 .row-1 .column img{
-        width: 100%;
-        padding: 20px 20px 100px 20px;
-    } */
+    section.GallerySection-2 .row-2 .column{
+        padding : 20px;
+        text-align: center;
+    }
 
-
-
-
-
-
+    section.GallerySection-2 .row-2 .column h3{
+        letter-spacing: 2px; 
+        font-family:"Montserrat";
+        text-align: center;
+        color: #d6b068;
+    }
+    section.GallerySection-2 .row-2 .column p{
+        letter-spacing: 2px; 
+        font-family:"Montserrat";
+        text-align: center;
+        color: #000;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 20px 0 0 0;
+    }
+    section.GallerySection-2 .row-2 .column p.read a{
+        letter-spacing: 2px; 5
+        font-family:"Montserrat";
+        text-align: center;
+        font-size: 12px;
+        padding: 20px 0 0 0;
+        color: #d6b068;
+    }
+    
+    section.GallerySection-2 .row-2 a .column.image {
+        background-image: url("assets/images/Gallery-2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height : 300px;
+        height : 100%;  
+    }
 
 </style>
 
@@ -72,18 +139,31 @@
 
 <section class="GallerySection-2">
     <div class="row-1">
-        <div class="column image">
-        </div>
+        <a href="" target="_blank">
+            <div class="column image">
+            </div>
+        </a>
         <div class="column">
             <h3>Bali Madira Hotel - May - Louise & Oscar</h3>
-        <p></p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede.
+            </p>
+            <p class="read"><a href="">Read More...</a></p>
         </div>
-        <!-- <div class="row-2">
-        <div class="column image">
-        </div>
+    </div>
+
+    <div class="row-2">
+        <a href="" target="_blank">
+            <div class="column image">
+            </div>
+        </a>
         <div class="column">
-            <h3>Bali Madira Hotel - May - Louise & Oscar</h3>
-        <p></p>
-        </div> -->
+            <h3>Bali Garden Beach Resort - July - Alessandra & Jamie</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede.
+            </p>
+            <p class="read"><a href="">Read More...</a></p>
     </div>
 </section>
