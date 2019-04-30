@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets\css\pricelist.css">
     <link rel="stylesheet" href="assets\css\contact.css">
     <link rel="stylesheet" href="assets\css\footer.css">
+    <link rel="stylesheet" href="assets\css\gallery.css">
+    <link rel="stylesheet" href="assets\css\gallerylistphoto.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"/>
     <link href="assets\fontawesome\css\all.css" rel="stylesheet">
 </head>
