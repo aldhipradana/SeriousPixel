@@ -81,6 +81,7 @@ section.AboutSection-2 .row .column p {
     font-size: 34px;
     color: #d6b068;
     letter-spacing: 1px;
+    text-shadow: 2px 2px #000;
 }
 section.AboutSection-3 .row {
     padding-bottom: 50px;
