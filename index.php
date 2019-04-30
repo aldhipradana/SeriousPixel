@@ -26,6 +26,10 @@
                     include_once('assets\template\header.php');
                     include_once('assets\template\login.php');
                     break;
+                case 'gallery-list':
+                    include_once('assets\template\header.php');
+                    include_once('assets\template\page\gallerylistphoto.php');
+                    break;
                 default:
                     include_once('assets\template\header.php');
                     include_once('assets\template\page\home.php');  

@@ -116,7 +116,7 @@
         color: #d6b068;
     }
     
-    section.GallerySection-2 .row-2 a .column.image {
+    section.GallerySection .row-2 a .column.image {
         background-image: url("assets/images/Gallery-2.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -139,7 +139,7 @@
 
 <section class="GallerySection-2">
     <div class="row-1">
-        <a href="" target="_blank">
+        <a href="?page=gallery-list" target="_blank">
             <div class="column image">
             </div>
         </a>
@@ -149,7 +149,7 @@
             Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede.
             </p>
-            <p class="read"><a href="">Read More...</a></p>
+            <p class="read"><a href="?page=gallery-list" target="_blank">Read More...</a></p>
         </div>
     </div>
 
