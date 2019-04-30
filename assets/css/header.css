@@ -43,8 +43,7 @@ nav.top.fixed {
 }
 
 nav.top.fixed ul a {
-  
-}
+    }
 
 nav .logo {
     color: #fff;
@@ -71,7 +70,7 @@ nav .logo {
 
 /* menu style */
 
-nav.top.not-fixed ul{
+nav.top.not-fixed ul {
     margin: 0;
     padding: 70px 100px 0 0;
 }
@@ -141,4 +140,22 @@ nav.top ul li a:hover {
     border-color: #000;
     background-color: #000;
     mix-blend-mode: multiply;
+}
+body.scrolled nav.top{
+    margin-top:60px !important;
+}
+@media screen and (max-width:980px) {
+    nav.not-fixed {
+        display: none;
+    }
+    nav.fixed ul li a {
+        font-size: 15px;
+        padding: 10px;
+    }
+    nav.top.fixed ul {
+        margin-top: 5px;
+    }
+    nav.top.fixed .logo {
+        display: none;
+    }
 }

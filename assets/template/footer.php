@@ -15,7 +15,6 @@
 
 <script src="assets/js/jquery.min.js"></script>
 <script type='text/javascript'>
-    //<![CDATA[
     $(document).ready(function () {
         var $body = $(document.body);
         var _SCROLL_FIXED_CUTOFF = _SCROLL_FIXED_CUTOFF || (
@@ -40,7 +39,6 @@
         });
     });
 
-    //]]>
 </script>
 
 </body>
