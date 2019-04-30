@@ -42,9 +42,6 @@ nav.top.fixed {
     transform: translate3d(0, 0, 0);
 }
 
-nav.top.fixed ul a {
-    }
-
 nav .logo {
     color: #fff;
     float: left;
@@ -140,9 +137,6 @@ nav.top ul li a:hover {
     border-color: #000;
     background-color: #000;
     mix-blend-mode: multiply;
-}
-body.scrolled nav.top{
-    margin-top:60px !important;
 }
 @media screen and (max-width:980px) {
     nav.not-fixed {
