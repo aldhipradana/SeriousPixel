@@ -44,16 +44,16 @@
         <ul>
             <ul>
                 <li>
-                    <a href="#">Gallery</a>
+                    <a href="?page=gallery">Gallery</a>
                 </li>
                 <li>
-                    <a href="#">Price List</a>
+                    <a href="?page=pricelist">Price List</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="?page=about">About</a>
                 </li>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="?page=contact">Contact Us</a>
                 </li>
             </ul>
         </ul>
