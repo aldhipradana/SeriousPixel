@@ -18,7 +18,7 @@
                     include_once('assets\template\header.php');
                     include_once('assets\template\page\about.php');
                     break;
-                case 'about':
+                case 'contact':
                     include_once('assets\template\header.php');
                     include_once('assets\template\page\contact.php');
                     break;  
