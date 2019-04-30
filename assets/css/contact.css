@@ -5,17 +5,20 @@ section.section-contact {
     margin: 50px 200px;
 }
 section.section-contact .row{
-  display: grid;
-  grid-template-columns: 60% 30%;	
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  overflow: auto;
 }
 section.section-contact .row .column-1{
-    width:auto;
+    width: 70%;
+    float: left;
 }
 section.section-contact .row .column-2{
-    width:auto;
-    display: grid;
-    height: 200px;
-    padding-top: 60px;
+    width: 30%;
+    height: fit-content;
+    float: left;
 }
 
 section.section-contact .row .column-1 h2{
