@@ -19,7 +19,7 @@
         var $body = $(document.body);
         var _SCROLL_FIXED_CUTOFF = _SCROLL_FIXED_CUTOFF || (
                 $(window).height() >= 825 ?
-                300 :
+                150 :
                 75
             ),
             _HEADER_HEIGHT = _HEADER_HEIGHT || 825;

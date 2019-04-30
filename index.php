@@ -3,7 +3,7 @@
             $page = $_GET['page'];
             switch ($page) {
                 case 'home':
-                    include_once('assets\template\header.php');
+                    include_once('assets\template\header-home.php');
                     include_once('assets\template\page\home.php');  
                     break;
                 case 'gallery':
@@ -31,12 +31,12 @@
                     include_once('assets\template\page\gallerylistphoto.php');
                     break;
                 default:
-                    include_once('assets\template\header.php');
+                    include_once('assets\template\header-home.php');
                     include_once('assets\template\page\home.php');  
                     break;
             }
         } else {          
-            include_once('assets\template\header.php');
+            include_once('assets\template\header-home.php');
             include_once('assets\template\page\home.php');  
         }
 

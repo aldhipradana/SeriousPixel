@@ -15,7 +15,26 @@
 </head>
 
 <body>
-
+    <!-- [ Normal Navbar ] -->
+    <nav class="top not-fixed">
+        <a href="?page=home" class="logo">
+            <img src="assets\images\LogoWhite.png" alt="Logo">
+        </a>
+        <ul>
+            <li>
+                <a href="?page=gallery">Gallery</a>
+            </li>
+            <li>
+                <a href="?page=pricelist">Price List</a>
+            </li>
+            <li>
+                <a href="?page=about">About</a>
+            </li>
+            <li>
+                <a href="?page=contact">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- [ Scrolled Navbar ] -->
     <nav class="top fixed">
@@ -42,24 +61,7 @@
 
     <header class="codeconveyHeader">
         <!-- <h1>Animated Sticky Header</h1> -->
-            <!-- [ Normal Navbar ] -->
-            <nav class="top not-fixed not-home">
-                <a href="?page=home" class="logo">
-                    <img src="assets\images\LogoWhite.png" alt="Logo">
-                </a>
-                <ul>
-                    <li>
-                        <a href="?page=gallery">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="?page=pricelist">Price List</a>
-                    </li>
-                    <li>
-                        <a href="?page=about">About</a>
-                    </li>
-                    <li>
-                        <a href="?page=contact">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
+        <span>
+            <a href="#">View Our Work</a>
+        </span>
     </header>

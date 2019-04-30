@@ -22,9 +22,10 @@ section.section-contact .row .column-2{
 }
 
 section.section-contact .row .column-1 h2{
-    font: 400 30px  "HamilltonTwo";
+    font: 400 38px  "HamilltonTwo";
     color: gold;
     text-align: center;
+    letter-spacing: -0.2px;
 }
 section.section-contact .row .column-1 h3{
     font: 400 20px  "MontserratLight";
