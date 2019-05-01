@@ -51,7 +51,7 @@
                 </tr>
                 <tr>
                     <td class="submit">
-                    <input type="submit" value="Submit Comment" name="post" id="comment-submit" class="button">
+                    <input type="submit" value="Send" name="post" id="comment-submit" class="button">
                     </td>
                 </tr>
                 

@@ -23,7 +23,6 @@
                     include_once('assets\template\page\contact.php');
                     break;  
                 case 'login':
-                    include_once('assets\template\header.php');
                     include_once('assets\template\login.php');
                     break;
                 case 'gallery-list':
