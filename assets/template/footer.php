@@ -6,25 +6,34 @@
             <i class="fab fa-twitter"></i>
         </div>
         <div class="sp-credit">
-            <p> Powered by <span> SeriousSajan.Inc </span> </p>
+            <p>
+                Powered by
+                <span>
+                    SeriousSajan.Inc
+                </span>
+            </p>
         </div>
     </div>
-
 
 </footer>
 
 <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.easeScroll.js"></script>
 <script type='text/javascript'>
+
+    // ### NAVBAR FIXED ####
     $(document).ready(function () {
+
+        $("html").easeScroll();
         var $body = $(document.body);
         var _SCROLL_FIXED_CUTOFF = _SCROLL_FIXED_CUTOFF || (
-                $(window).height() >= 825 ?
-                150 :
-                75
+                $(window).height() >= 825
+                    ? 150
+                    : 75
             ),
             _HEADER_HEIGHT = _HEADER_HEIGHT || 825;
         $(window).scroll(function (e) {
-            if ($('nav.top[data-no-scroll]').length)
+            if ($('nav.top[data-no-scroll]').length) 
                 return;
             if (this.pageYOffset >= _SCROLL_FIXED_CUTOFF && !$body.hasClass('scrolled')) {
                 $body.addClass('scrolled');
@@ -38,7 +47,6 @@
             }
         });
     });
-
 </script>
 
 </body>

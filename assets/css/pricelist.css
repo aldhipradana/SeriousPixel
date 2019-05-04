@@ -2,13 +2,13 @@ section.Pricesection {
     background-color: #f3f4f4;
     text-align: center;
 }
-section.Pricesection .row{
-    width: 100%;    
-    max-width: 1000px;    
+section.Pricesection .row {
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 0 30 0;
+    padding: 0 0 30;
 }
-section.Pricesection .row .column{
+section.Pricesection .row .column {
     width: 100%;
 }
 section.Pricesection .Box {
@@ -19,10 +19,10 @@ section.Pricesection .Box {
 }
 section.Pricesection .Box h2 {
     font-family: "Montserrat";
-    padding: 30 0 30 0;
+    padding: 30 0;
     color: #3f4349;
 }
-section.Pricesection .row .column-2{
+section.Pricesection .row .column-2 {
     padding: 30px 0 0;
     column-count: 2;
 }
@@ -32,10 +32,17 @@ section.Pricesection .row .column-2 h3 {
     font-size: 15pt;
     color: #3f4349;
 }
-section.Pricesection .row .column-3{
+section.Pricesection .row .column-2 h3 hr {
+    background-color: #d6b068;
+    width: 100px;
+    height: 4px;
+    border: unset;
+    margin: 10px auto;
+}
+section.Pricesection .row .column-3 {
     padding: 10px 0;
     column-count: 2;
- 
+
 }
 section.Pricesection .row .column-3 p {
     font-family: "Montserrat";
@@ -43,27 +50,25 @@ section.Pricesection .row .column-3 p {
     font-size: 12pt;
     color: #3f4349;
 }
-section.Pricesection .row .column-4{
+section.Pricesection .row .column-4 {
     padding: 10px 0;
     column-count: 2;
- 
+
 }
 section.Pricesection .row .column-5 {
-    
+
     padding: auto;
     column-count: 2;
-  
+
 }
-section.Pricesection .row .column-5 p{
-    
-    background-color:#d6b068;
+section.Pricesection .row .column-5 p {
+    background-color: #d6b068;
     width: 130px;
-    margin: 0 178; 
-    height:45px;
-    padding:10px;
+    margin: 0 178;
+    height: 45px;
+    padding: 10px;
     font-family: "Montserrat";
     text-decoration: none;
     color: #ffffff;
-    
-}
 
+}

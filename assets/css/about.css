@@ -47,10 +47,10 @@ section.AboutSection-3 hr {
 }
 section.AboutSection-2 {
     text-align: left;
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
 }
-section.AboutSection-2::before{
+section.AboutSection-2::before {
     background: url("../images/bg-about-SectionAbout-2.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -142,6 +142,7 @@ section.AboutSection-4 .row:nth-child(2) .column h2 {
     font-family: "HamilltonTwo";
     font-size: 60px;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 5px #000;
 }
 
 section.AboutSection-4 .row:nth-child(2) .column h2 span {
@@ -150,4 +151,54 @@ section.AboutSection-4 .row:nth-child(2) .column h2 span {
     font-size: 23px;
     letter-spacing: -1px;
 }
-@media screen and (min-width:980px) {}
+@media screen and (max-width:980px) {
+    section.AboutSection .row .column,
+    section.AboutSection-3 .row .column {
+        padding: 20px;
+    }
+    section.AboutSection h3 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        padding-bottom: 5px;
+    }
+    section.AboutSection-2 {
+        background: url("../images/bg-about-SectionAbout-2.jpg");
+        background-size: cover;
+    }
+    section.AboutSection-2::before {
+        background: unset !important;
+    }
+    section.AboutSection-2 .row {
+        padding: 25px 15px;
+    }
+    section.AboutSection-2 .row .column {
+        float: none;
+        padding-right: 0;
+    }
+    section.AboutSection-2 .row .column p {
+        text-align: center;
+        line-height: 1.7em;
+        color: #fff;
+        font-size: 35px;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 7px #000;
+    }
+    section.AboutSection-3 .row {
+        padding-bottom: 0;
+    }
+    section.AboutSection-4 .row .column h2 {
+        font-size: 18px;
+    }
+    section.AboutSection-4 .row .column h2 span {
+        padding-top: 10px;
+        font-size: 26px;
+    }
+    section.AboutSection-4 .row:nth-child(2) {
+        display: block;
+        padding: 10px;
+    }
+    section.AboutSection-4 .row:nth-child(2) .column {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

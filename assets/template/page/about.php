@@ -38,14 +38,8 @@
                 <div class="row">
                     <div class="column">
                         <h2>WE SAFEGUARD THE MOMENTS OF YOUR LIFE THAT TRULY MATTER
-                            <span>Expressions, Experiences, Exmotions</span>
+                            <span>Expressions, Experiences, Emotions</span>
                         </h2>
-                        <p>We’re committed to providing a comprehensive service to those who want their
-                            dream wedding to be in Bali. Having a wedding in a foreign place can be daunting
-                            at first, but you can be confident in our professionality, credentials, and
-                            empathetic yet guiding approach, all because of our experience and technical
-                            understanding.
-                        </p>
                     </div>
                     <div class="row">
                         <div class="column">
