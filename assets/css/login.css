@@ -1,3 +1,9 @@
+html,body{
+  overflow: hidden;
+}
+body{
+  max-height: 100px;
+}
 body ::-webkit-input-placeholder {
   /* WebKit browsers */
   font-family: 'Source Sans Pro', sans-serif;

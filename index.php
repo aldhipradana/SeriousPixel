@@ -29,6 +29,9 @@
                     include_once('assets\template\header.php');
                     include_once('assets\template\page\gallerylistphoto.php');
                     break;
+                case 'admin':
+                    include_once('assets\template\page\admin\admin.php');
+                break;
                 default:
                     include_once('assets\template\header-home.php');
                     include_once('assets\template\page\home.php');  
@@ -39,5 +42,7 @@
             include_once('assets\template\page\home.php');  
         }
 
-        include_once('assets\template\footer.php');
+       if($page != "login"){
+           include_once('assets\template\footer.php');
+       }
     ?>
