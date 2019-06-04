@@ -65,12 +65,12 @@ section.GallerySection-2 .row-1 .column p.read a {
     padding: 20px 0 0;
     color: #d6b068;
 }
-
-section.GallerySection-2 .row-1 a .column.image {
-    background-image: url("../../assets/images/Gallery-1.jpg");
+section.GallerySection-2 .row-1 a .image img {
+    /* background-image: url("../../assets/images/Gallery-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
+    width: 100%;
     max-height: 300px;
     height: 100%;
 }
@@ -114,11 +114,12 @@ section.GallerySection-2 .row-2 .column p.read a {
     transition: ease-in-out .3s;
 }
 
-section.GallerySection-2 .row-2 a .column.image {
-    background-image: url("../../assets/images/Gallery-2.jpg");
+section.GallerySection-2 .row-2 a .image img{
+    /* background-image: url("../../assets/images/Gallery-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
+    width: 100%;
     max-height: 300px;
     height: 100%;
 }
@@ -136,5 +137,12 @@ section.GallerySection-2 .row-2:hover p.read a {
     section.GallerySection-2 .row-2 {
         width: 100%;
         padding: 10px 10px 0;
+    }
+}
+
+@media screen and (max-width:460px){
+    section.GallerySection .row-1 .column p{
+        font-size: 25px;
+        max-width: 400px;
     }
 }

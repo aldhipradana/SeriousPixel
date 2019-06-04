@@ -14,7 +14,8 @@
 <section class="GallerySection-2">
     <div class="row-1">
         <a href="?page=gallery-list" target="_blank">
-            <div class="column image">
+            <div class="image">
+                <img src="./assets/images/Gallery-1.jpg" alt="Louise & Oscar">
             </div>
         </a>
         <div class="column">
@@ -29,7 +30,8 @@
 
     <div class="row-2">
         <a href="" target="_blank">
-            <div class="column image">
+            <div class="image">
+                <img src="./assets/images/Gallery-2.jpg" alt="Alessandra & Jamie">
             </div>
         </a>
         <div class="column">
