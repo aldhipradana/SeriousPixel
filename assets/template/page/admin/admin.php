@@ -1,79 +1,16 @@
-<style>
-    .navbar-header {
-        background-color: #088A85;
-    }
-
-    .logout a {
-        text-decoration: none;
-        float: right;
-        margin: 5px 10px;
-    }
-
-    #sidebar-left {
-        background-color: #088A85;
-        float: left;
-        width: 150px;
-        height: 530px;
-    }
-
-    #content {
-        background-color: #BDBDBD;
-        height: 530px;
-    }
-
-    .dropdown-media a,
-    .dropdown-pages,
-    .dropdown-pages a,
-    .sub-menu-pages a {
-        text-decoration: none;
-        padding-top: 20px;
-        font-size: 20;
-    }
-
-    .sub-menu-media,
-    .sub-menu-pages {
-        display: none;
-        width: 100px;
-    }
-    #menu a,
-    .dropdown-media,
-    .dropdown-pages {
-        text-decoration: none;
-        padding-left: 10px;
-        padding-top: 20px;
-        font-size: 20;
-        width: 140px;
-        float: left;
-        overflow: hidden;
-
-    }
-    .test {
-        float: left;
-        width: 1182px;
-        height: 530px;
-
-    }
-    html {
-        background-color: #FAFAFA;
-    }
-</style>
-<div class="navbar-header">
-
-    <div class="logout">
-        <a href="logout.php">Logout</a>
-    </div>
-    <div class="header-logo">
-        <a href="http://myfourwalls.in/">
-            <img src="My Four Wallls.png"></a>
-        </div>
-    </div>
-    <!-- Header Ends here! -->
+<head>
+<title>Admin</title>
+<link rel="stylesheet" href="assets\css\admin.css">
+    <link rel="stylesheet" href="assets\css\styles.css">
+</head>
 
     <!-- Sidebar-Left starts here! -->
 
-    <div id="sidebarleft" href="" class="sidebar">
+    <div id="sidebarleft" class="sidebar">
         <div id="sidebar-left">
-
+            <div class="profile-image">
+            
+            </div>
             <div id="menu">
                 <a href="index.php" target="_self">Dashboard</a>
                 <a href="login.php" target="_self">Home</a>
@@ -105,25 +42,17 @@
                 <sup>Your Dashboard</sup>
             </div>
             <div class="test"></div>
+
+            <div id="footer">
+                <div align="center">
+                    <strong>Copyright @ 2011 - All Rights Reserved</strong>
+                </div>
+            </div>
         </div>
         <!-- Content-Area Ends here! -->
 
         <!-- This is Footer -->
 
-        <div id="footer">
-            <div align="center">
-                <strong>Copyright @ 2011 - All Rights Reserved</strong>
-            </div>
-        </div>
         <!-- Footer Ends here! -->
 
     </div>
-    <script>
-        jQuery(document).ready(function () {
-            jQuery('.dropdown-pages').hover(function () {
-                jQuery(this)
-                    .children('.sub-menu-pages')
-                    .toggle(200);
-            });
-        });
-    </script>
