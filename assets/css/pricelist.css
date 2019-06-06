@@ -7,26 +7,31 @@ section.Pricesection .row {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 0 30;
+    font-family: "Montserrat";
+    padding: 10 20px 10;
+    font-size: 12pt;
+    color: #3f4349;
 }
 section.Pricesection .row .column {
-    width: 49%;
+    width: 65%;
     display: inline-block;
 }
 section.Pricesection .Box {
     width: 100%;
-    max-height: 450px;
+    max-height: 570px;
     height: 100%;
     background-color: #ffffff;
+    margin: 0 0 15;
 }
 section.Pricesection .Box h2 {
     font-family: "Montserrat";
-    padding: 30 0;
+    padding: 30 0 15;
     color: #3f4349;
 }
 section.Pricesection .Box h2 hr {
     background-color: #3f4349;
-    width: 100%;
-    height: 2px;
+    width: 75%;
+    height: 3px;
     margin: 25px auto auto;
 }
 section.Pricesection .row h3 {
@@ -42,14 +47,8 @@ section.Pricesection .row h3 hr {
     border: unset;
     margin: 10px auto;
 }
-section.Pricesection .row {
-    font-family: "Montserrat";
-    padding: 0 20px;
-    font-size: 12pt;
-    color: #3f4349;
-}
 section.Pricesection .row .column .content {
-    margin: 15px auto;
+    margin: 15px auto 25px;
 }
 
 section.Pricesection .row .column .content p.price {
