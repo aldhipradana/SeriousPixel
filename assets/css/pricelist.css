@@ -4,41 +4,40 @@ section.Pricesection {
 }
 section.Pricesection .row {
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 0 30;
-    font-family: "Montserrat";
-    padding: 10 20px 10;
-    font-size: 12pt;
-    color: #3f4349;
+   
 }
 section.Pricesection .row .column {
-    width: 65%;
+    width: 49%;
     display: inline-block;
+    margin:10px auto;
 }
 section.Pricesection .Box {
     width: 100%;
-    max-height: 570px;
+    max-height: 400px;
     height: 100%;
-    background-color: #ffffff;
-    margin: 0 0 15;
+    background-color: #ffffff;    
 }
 section.Pricesection .Box h2 {
     font-family: "Montserrat";
-    padding: 30 0 15;
+    padding: 30 0 0;
     color: #3f4349;
 }
 section.Pricesection .Box h2 hr {
     background-color: #3f4349;
-    width: 75%;
+    max-width: 300;
+    width: 100%;
     height: 3px;
-    margin: 25px auto auto;
+    margin: 15px auto auto;
 }
 section.Pricesection .row h3 {
     font-family: "Montserrat";
-    padding: 0 20px;
+    padding: 25px 20px 0;
     font-size: 15pt;
     color: #3f4349;
+    display: inline-block;
 }
 section.Pricesection .row h3 hr {
     background-color: #d6b068;
@@ -47,13 +46,19 @@ section.Pricesection .row h3 hr {
     border: unset;
     margin: 10px auto;
 }
+section.Pricesection .row {
+    font-family: "Montserrat";
+    padding: 0 20px;
+    font-size: 12pt;
+    color: #3f4349;
+}
 section.Pricesection .row .column .content {
-    margin: 15px auto 25px;
+    margin: 15px auto 15px;
 }
 
 section.Pricesection .row .column .content p.price {
     font-size: 24px;
-    margin: 10px auto;
+    margin: 0;
 }
 section.Pricesection .row .column a {
     background-color: #d6b068;
@@ -65,6 +70,7 @@ section.Pricesection .row .column a {
     text-decoration: none;
     color: #ffffff;
 }
+
 @media screen and (max-width:980px) {
     section.Pricesection .row p {
         margin: 0 auto;

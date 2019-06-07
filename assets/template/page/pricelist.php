@@ -1,8 +1,158 @@
 <section class="Pricesection">
-    
+    <!-- WED -->
     <div class="row">
         <div class="column">
-            <!-- WEDDING -->
+                    <div class="box">
+                        <!-- *DISINI ATUR JUDUL-JUDUL PACKAGE NYA* -->
+                        <h2>WEDDING PHOTOGRAPHY PACKAGE
+                            <hr></h2>
+                            <!-- *ATUR H3 NYA* -->
+                            <h3>Wedding
+                                <span>Silver Package</span>
+                                <hr></h3>
+                                <div class="content">
+                                    <!-- *ATUR CONTENT* -->
+                                    <p>Up to 3 Hours of Photography</p>
+                                    <p>
+                                        2 Wedding Photographers</p>
+                                    <p>DVD of All Images</p>
+                                    <p>Maximum 300 Images</p>
+                                    <!-- *ATUR HARGA* -->
+                                    <p class="price">$599</p>
+                                </div>
+                                <!-- *LINK* -->
+                                <a href="#">Get Silver</a>
+                    </div>
+            </div>
+            <div class="column">
+                    <div class="box">
+                        <!-- *DISINI ATUR JUDUL-JUDUL PACKAGE NYA* -->
+                        <h2>WEDDING PHOTOGRAPHY PACKAGE
+                            <hr></h2>
+                            <!-- *ATUR H3 NYA* -->
+                            <h3>Wedding
+                                <span>Gold Package</span>
+                                <hr></h3>
+                                <div class="content">
+                                <p>Up to 5 Hours of Photography</p>
+                                <p>2 Wedding Photographers</p>
+                                <p>DVD of All Images</p>
+                                <p>Maximum 300-700 Images</p>
+                                <p class="price">$1199</p>
+                                </div>
+                                <!-- *LINK* -->
+                                <a href="#">Get Gold</a>
+                    </div>
+            </div>
+         
+    </div>
+    <!-- FAMILY -->
+    <div class="row">
+        <div class="column">
+                    <div class="box">
+                        <!-- *DISINI ATUR JUDUL-JUDUL PACKAGE NYA* -->
+                        <h2>FAMILY PHOTOSHOOT PACKAGE
+                            <hr></h2>
+                            <!-- *ATUR H3 NYA* -->
+                            <h3>Family
+                                <span>Silver Package</span>
+                                <hr></h3>
+                                <div class="content">
+                                    <!-- *ATUR CONTENT* -->
+                                    <p>Up to 2 Hours of Photography</p>
+                                    <p>2 Professional Photographers</p>
+                                    <p>Photo in 1 Location</p>
+                                    <p>Maximum 300 Images</p>
+                                    <!-- *ATUR HARGA* -->
+                                    <p class="price">$399</p>
+                                </div>
+                                <!-- *LINK* -->
+                                <a href="#">Get Silver</a>
+                    </div>
+            </div>
+            <div class="column">
+                    <div class="box">
+                        <!-- *DISINI ATUR JUDUL-JUDUL PACKAGE NYA* -->
+                        <h2>FAMILY PHOTOSHOOT PACKAGE
+                            <hr></h2>
+                            <!-- *ATUR H3 NYA* -->
+                            <h3>Family
+                                <span>Gold Package</span>
+                                <hr></h3>
+                                <div class="content">
+                                    <!-- *ATUR CONTENT* -->
+                                    <p>Up to 5 Hours of Photography</p>
+                                    <p>2 Professional Photographers</p>
+                                    <p>Photo in 2 Location</p>
+                                    <p>Between 300 - 700 Images</p>
+                                    <!-- *ATUR HARGA* -->
+                                    <p class="price">$1099</p>
+                                </div>
+                                <!-- *LINK* -->
+                                <a href="#">Get Gold</a>
+                    </div>
+            </div> 
+    </div>
+     <!-- BRANDING -->
+     <div class="row">
+        <div class="column">
+                    <div class="box">
+                        <!-- *DISINI ATUR JUDUL-JUDUL PACKAGE NYA* -->
+                        <h2>BRANDING PHOTOSHOOT PACKAGE
+                            <hr></h2>
+                            <h3>Branding
+                                <span>Silver Package</span>
+                                <hr></h3>
+                                <div class="content">
+                                    <!-- *ATUR CONTENT* -->
+                                    <p>Consultation + brand strategy review</p>
+                                    <p>On-location 90 min photoshoot</p>
+                                    <p>Professional editing of best images</p>
+                                    <p>Online gallery of 15 digital images</p>
+                                    <!-- *ATUR HARGA* -->
+                                    <p class="price">$699</p>
+                                </div>
+                                <!-- *LINK* -->
+                                <a href="#">Get Silver</a>
+                    </div>
+            </div>
+            <div class="column">
+                    <div class="box">
+                        <!-- *DISINI ATUR JUDUL-JUDUL PACKAGE NYA* -->
+                        <h2>BRANDING PHOTOSHOOT PACKAGE
+                            <hr></h2>
+                            <h3>Branding
+                                <span>Gold Package</span>
+                                <hr></h3>
+                                <div class="content">
+                                    <!-- *ATUR CONTENT* -->
+                                    <p>Consultation + brand strategy review</p>
+                                    <p>On-location 4 hours photoshoot</p>
+                                    <p>Professional editing of best images</p>
+                                    <p>Online gallery of 25 digital images</p>
+                                    <!-- *ATUR HARGA* -->
+                                    <p class="price">$1499</p>
+                                </div>
+                                <!-- *LINK* -->
+                                <a href="#">Get Gold</a>
+                    </div>
+            </div>
+         
+    </div>
+                    
+  </section>      
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="column">
+           
             <div class="box">
                 <h2>WEDDING PHOTOGRAPHY PACKAGE
                     <hr></h2>
@@ -15,8 +165,9 @@
                             <p>DVD of All Images</p>
                             <p>Maximum 300 Images</p>
                             <p class="price">$599</p>
-                            <a href="#">Get Silver</a>
+                            
                         </div>
+                        <a href="#">Get Silver</a>
 
                         <h3>Wedding
                         <span>Gold Package</span>
@@ -27,10 +178,11 @@
                             <p>DVD of All Images</p>
                             <p>Maximum 300-700 Images</p>
                             <p class="price">$1199</p>
-                            <a href="#">Get Gold</a>
-                        </div>   
+                            
+                        </div>
+                        <a href="#">Get Gold</a>   
             </div>
-            <!-- FAMILY -->
+            
             <div class="box">
                 <h2>FAMILY PHOTOSHOOT PACKAGE
                     <hr></h2>
@@ -43,9 +195,9 @@
                             <p>Photo in 1 Location</p>
                             <p>Maximum 300 Images</p>
                             <p class="price">$399</p>
-                            <a href="#">Get Silver</a>
+                            
                         </div>
-        
+                        <a href="#">Get Silver</a>
                         <h3>Family
                         <span>Gold Package</span>
                         <hr></h3>
@@ -54,11 +206,12 @@
                             <p>2 Professional Photographers</p>
                             <p>Photo in 2 Location</p>
                             <p>Between 300 - 700 Images</p>
-                            <p class="price">$1099</p>
+                            
                             <a href="#">Get Gold</a>
                         </div>
+                        <p class="price">$1099</p>
             </div>
-            <!-- BRANDING -->
+           
             <div class="box">
                 <h2>BRANDING PHOTOSHOOT PACKAGE
                     <hr></h2>
@@ -71,9 +224,9 @@
                             <p>Professional editing of best images</p>
                             <p>Online gallery of 15 digital images</p>
                             <p class="price">$699</p>
-                            <a href="#">Get Silver</a>
+                            
                         </div>
-                        
+                        <a href="#">Get Silver</a>
 
                         <h3>Branding
                         <span>Gold Package</span>
@@ -84,39 +237,15 @@
                             <p>Professional editing of best images</p>
                             <p>Online gallery of 25 digital images</p>
                             <p class="price">$1499</p>
-                            <a href="#">Get Gold</a>
+                            
                         </div>
+                        <a href="#">Get Gold</a>
                         
             </div>
         </div>
-    </div>
-</section>
-                <!-- <div class="column">
-                    <div class="box">
-                        *DISINI ATUR JUDUL-JUDUL PACKAGE NYA*
-                        <h2>WEDDING PHOTOGRAPHY PACKAGE
-                            <hr></h2>
-                            *ATUR H3 NYA*
-                            <h3>Wedding
-                                <span>Silver Package</span>
-                                <hr></h3>
-                                <div class="content">
-                                    *ATUR CONTENT*
-                                    <p>Up to 3 Hours of Photography</p>
-                                    <p>
-                                        2 Wedding Photographers</p>
-                                    <p>DVD of All Images</p>
-                                    <p>Maximum 300 Images</p>
-                                    *ATUR HARGA*
-                                    <p class="price">$599</p>
-                                </div>
-                                *LINK*
-                                <a href="#">Get Silver</a>
-                            </div>
-                        </div>
-
-                    </div> -->
-
+    </div> -->
+  
+               
                     <!-- <div style="background-color:#3f4349; width:750px; height:2px; margin:
                     auto"></div> -->
                     <!-- <h3>Wedding <span>Gold Package</span><hr></h3> -->
