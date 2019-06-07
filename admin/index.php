@@ -18,4 +18,6 @@
     //    if($page != "login"){
     //         header("Location: login.php");
     //    }
+    include_once('assets\template\footer.php');
+
     ?>
