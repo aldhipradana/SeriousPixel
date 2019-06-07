@@ -30,7 +30,7 @@
                     include_once('assets\template\page\gallerylistphoto.php');
                     break;
                 case 'admin':
-                    include_once('assets\template\page\admin\admin.php');
+                    header("Location: admin\ ");
                 break;
                 default:
                     include_once('assets\template\header-home.php');
@@ -41,8 +41,4 @@
             include_once('assets\template\header-home.php');
             include_once('assets\template\page\home.php');  
         }
-
-       if($page != "login"){
-           include_once('assets\template\footer.php');
-       }
     ?>
