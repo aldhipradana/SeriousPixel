@@ -1,0 +1,18 @@
+#content {
+    background-color: #292c30;
+    padding: 20px;
+    height: 100%;
+}
+#content .content-dashboard-container,
+#content .label-dashboard {
+    background-color: #3a3e44;
+    border-radius: 2px;
+    padding: 10px;
+    font-family: "MontserratSemiBold";
+    font-size: 17px;
+    width: 100%;
+}
+#content .content-dashboard {
+    padding-top: 20px;
+    display: flex;
+}

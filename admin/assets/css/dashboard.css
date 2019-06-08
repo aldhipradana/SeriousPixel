@@ -1,0 +1,87 @@
+section.container-admin .column.column-container {
+    float: left;
+}
+section.container-admin .column.column-container:first-child {
+    width: 18.5%;
+}
+section.container-admin .column.column-container:last-child {
+    width: 81.5%;
+}
+section.container-admin .column_1_3:not(:last-child) {
+    padding-right: 35px;
+}
+
+
+
+/* CONTENT DASHBOARD 3 COLUMN*/
+#content .content-dashboard .content-dashboard-container {
+    padding-bottom: 20px;
+}
+#content .content-dashboard-container .content-label-dashboard {
+    font-size: 21px;
+}
+#content .content-dashboard-container .image-content-dashboard {
+    padding-left: 15px;
+}
+#content .content-dashboard-container .image-content-dashboard img {
+    max-width: 125px;
+}
+#content .content-dashboard-container .number-content-dashboard {
+    padding: 35px 0 45px 80px;
+}
+#content .content-dashboard .content-dashboard-container .number-content-dashboard .count {
+    font-family: "MontserratMedium";
+    font-size: 23px;
+    color: #d6b068;
+}
+#content .content-dashboard .content-dashboard-container .number-content-dashboard .label {
+    font-family: "MontserratLight";
+    font-size: 13px;
+    color: #bbbfc5;
+}
+
+/* CONTENT DASHBOARD POPULAR POST */
+#content .content-dashboard .label-dashboard {
+    font-size: 15px;
+    font-family: "Montserrat";
+    padding-left: unset;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1em;
+}
+#content .content-dashboard .column ul.post {
+    list-style: none;
+}
+#content .content-dashboard .column ul.post li {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+#content .content-dashboard .column ul.post li * {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "MontserratLight";
+    font-size: 15px;
+    color: #fff;
+}
+#content .content-dashboard .column ul.post li span {
+    float: right;
+}
+
+@media screen and (max-width:980px) {
+
+    #content .content-dashboard-container .image-content-dashboard {
+        padding: unset;
+    }
+    section.container-admin .column_1_3 {
+        padding-bottom: 1em;
+    }
+    #content .content-dashboard {
+        display: block;
+        text-align: center;
+    }
+    section.container-admin .column_1_3:not(:last-child) {
+        padding-right: unset;
+    }
+    #content .content-dashboard-container .number-content-dashboard {
+        padding: unset;
+    }
+}

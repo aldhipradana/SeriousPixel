@@ -1,8 +1,11 @@
 <head>
     <title>Admin</title>
-    <link rel="stylesheet" href="assets\css\admin.css">
+    <link rel="stylesheet" href="assets\css\dashboard.css">
+    <link rel="stylesheet" href="assets\css\header.css">
+    <link rel="stylesheet" href="assets\css\footer.css">
+    <link rel="stylesheet" href="assets\css\style-admin.css">
     <link rel="stylesheet" href="..\assets\css\styles.css">
-    <link href="assets\fontawesome\css\all.css" rel="stylesheet">
+    <link href="..\assets\fontawesome\css\all.css" rel="stylesheet">
 </head>
 <section class="container-admin">
 <div class="row">

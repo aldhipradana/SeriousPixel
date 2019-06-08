@@ -82,8 +82,8 @@
                         </div>
                     </div>
                     <div id="footer">
-                        <div class="label-dashboard "> © 2019 Serious Pixel | Bali | Serious Wedding Photography
-
+                        <div class="label-dashboard "> 
+                            &copy; 2019 Serious Pixel | Bali | Serious Wedding Photography
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,13 @@
+
+/* FOOTER ADMIN */
+#footer {
+    margin-top: 20px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+#footer .label-dashboard {
+    font-family: "MontserratExtraLight";
+    color: #f0f0f0;
+}
+
