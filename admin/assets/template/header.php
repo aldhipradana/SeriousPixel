@@ -35,22 +35,22 @@
                 <div class="label-menu">Navigation</div>
                 <ul class="menu">
                     <li>
-                        <a href="#" target="_self" class="current">
+                        <a href="?page=dashboard" target="_self" class="current">
                             <span class="fa fa-home"></span>
                             Dashboard</a>
                     </li>
                     <li>
-                        <a href="#" target="_self">
+                        <a href="?page=gallery" target="_self">
                             <span class="fa fa-images"></span>
                             Gallery</a>
                     </li>
                     <li>
-                        <a href="#" target="_self">
+                        <a href="?page=pricelist" target="_self">
                             <span class="fa fa-dollar-sign"></span>
                             Price List</a>
                     </li>
                     <li>
-                        <a href="#" target="_self">
+                        <a href="?page=inbox" target="_self">
                             <span class="fa fa-envelope"></span>
                             Inbox</a>
                     </li>
