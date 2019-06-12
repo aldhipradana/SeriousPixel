@@ -3,13 +3,9 @@
     if(isset($_POST['submit'])){
         $user = $_POST['username'];
         $pass = $_POST['password'];
-        echo "<script> alert(\"NJING\")</script>";
-        $bypass = login($user,$pass);
-        print_r($bypass);
-        if(isset($bypass)){
-            $_SESSION['username'] = $bypass['usname'];
-            $_SESSION['pass'] = $bypass['pass'];
-            $_SESSION['nama'] = $bypass['nama'];
+        $login = login($user,$pass);
+        if($login){
+            header("Location: index.php");
         }
     }
 

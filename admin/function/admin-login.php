@@ -1,26 +1,24 @@
 <?php 
 
-    echo "Admin";
-    echo "Login Check";
+    // echo "Admin";
+    // echo "Login Check";
     
     function login($username,$password){
+        global $con;
         $pass = md5($password);
-        $sql = "select * from `spuser` where username='".$username."' and password='.".$pass."';";
-        $hasil = mysqli_query($con, $sql);
-        if(mysqli_num_rows($hasil) > 0){
-            echo "Mantap";
-            $dataAdmin = array();
-            foreach ($hasil as $data) {
-                $dataAdmin['usname'] = $data['username'];
-                $dataAdmin['pass'] = $data['password'];
-                $dataAdmin['nama'] = $data['nama'];
-
+        $sql = "SELECT * FROM `spuser` WHERE username = '".$username."' AND password = '".$pass."' ";
+        $query = mysqli_query($con, $sql);
+        $bypass = mysqli_num_rows($query);
+        if( $bypass > 0){
+            foreach ($query as $data) {
+                $_SESSION['usname'] = $data['Username'];
+                $_SESSION['pass'] = $data['Password'];
+                $_SESSION['nama'] = $data['Nama'];
+                $_SESSION['email'] = $data['Email'];
             }
-            header ("Location : /admin/");
-
-            return $dataAdmin;
+            return true;
         }else{
-            echo "<script> alert('Kontol'); </script>";
+            return false;
         }
     }
 ?>
