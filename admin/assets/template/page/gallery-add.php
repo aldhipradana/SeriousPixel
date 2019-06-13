@@ -7,9 +7,11 @@
         // $cat  = $_POST['categories'];
 
         // Image Setting and Check
-        $dir   = "/assets/images/gallery/";
+        $dir   = getcwd()."\assets\images\gallery\ ";
         if (!file_exists($dir)) {
             mkdir($dir, 007, true);
+        }else{
+            echo "<script> alert(\"File already exists.\"); </script>";
         }
         $file = $dir . basename($_FILES["fileToUpload"]["name"]);
         $imageFileType = strtolower(pathinfo($file,PATHINFO_EXTENSION));
@@ -20,6 +22,7 @@
                 echo "<script> alert(\"File already exists.\"); </script>";
             }else{
                 if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $file)) {
+                    move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $file);
                     $query = "INSERT INTO spgallery(Gambar, Title, Description) VALUES ('$file', '$title', '$desc')";
                     $sql = mysqli_query($con, $query);
                     if($sql){
