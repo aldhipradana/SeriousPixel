@@ -42,11 +42,49 @@
     font-family: MontserratSemiBold;
     font-size: 16px;
 }
-
 #content .dataTables_wrapper table th {
     font-family: Source Sans Pro;
 }
-
 #content .dataTables_wrapper table td {
     font-family: MontserratMedium;
+}
+/* VIEW FORM */
+#content form .form-group {
+    padding: 10px;
+}
+#content form .form-group label {
+    display: block;
+    padding-bottom: 5px;
+}
+#content form .form-group input[type=text],
+#content form .form-group textarea {
+    display: block;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 17px;
+    font-family: Montseratt;
+    color: #131a26;
+    transition: ease-in-out 0.3s;
+}
+#content form .form-group input:focus,
+#content form .form-group textarea:focus {
+    border-color: #80bdff;
+}
+
+#content form .form-group input[type=submit] {
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    background: #3a3e44;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700 !important;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+#content form .form-group input[type=submit]:focus,
+#content form .form-group input[type=submit]:hover {
+    background: #2c2f33;
 }
