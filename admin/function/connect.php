@@ -5,7 +5,7 @@
     $db     = "seriouspixel";
     
     $con = mysqli_connect($host, $user, $pass, $db) or die(mysqli_error($con));
-
+    global $con;
     if ($con) {
         // echo "oalah";
         return true;
