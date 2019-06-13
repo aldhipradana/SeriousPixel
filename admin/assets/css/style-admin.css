@@ -88,3 +88,8 @@
 #content form .form-group input[type=submit]:hover {
     background: #2c2f33;
 }
+
+/* Table */
+table tr td{
+    border-right: 1px solid #000;
+}

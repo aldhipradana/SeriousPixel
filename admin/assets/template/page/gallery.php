@@ -14,24 +14,28 @@
                 <div class="form-links">
                     <a href="?page=gallery-add" class="add">Tambah</a>
                 </div>
-                <table id="myTable">
+                <table id="myTable" >
                     <thead>
                         <tr>
                             <th>Title</th>
                             <th>Description</th>
+                            <th>Date</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody  style="color:#000;">
                         <?php foreach($data as $data) {?>
                         <tr>
                             <td><?php echo $data['Title']?></td>
                             <td><?php echo $data['Description']?></td>
+                            <td><?php echo $data['Date']?></td>
+                            <td></td>
                         </tr>
                         <?php } ?>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>test</th>
+                            <!-- <th>test</th> -->
                         </tr>
                     </tfoot>
                 </table>
