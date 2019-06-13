@@ -1,11 +1,7 @@
 <?php   
-echo "kampret";
-function create(){
+// function sp_query($con, $sql){
+//     $query  = mysqli_query($con, $sql);
+//     return $query;
+// }
 
-}
-
-function read($con, $sql){
-    $query  = mysqli_query($con, $sql);
-    return $query;
-}
 ?>

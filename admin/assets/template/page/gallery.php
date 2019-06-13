@@ -1,7 +1,7 @@
 <!-- This is Content-Area -->
 <?php 
-    // $sql = "SELECT * FROM `spgallery`";
-    // $data = read($con, $sql); 
+    $sql = "SELECT * FROM `spgallery`";
+    $data = mysqli_query($con, $sql); 
 ?>
 <div class="column column-container">
     <div id="content">
@@ -12,7 +12,7 @@
         <div class="row content-dashboard">
             <div class="column">
                 <div class="form-links">
-                    <a href="#" class="add">Tambah</a>
+                    <a href="?page=gallery-add" class="add">Tambah</a>
                 </div>
                 <table id="myTable">
                     <thead>
@@ -22,16 +22,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- <?php foreach($data as $data) {?>
+                        <?php foreach($data as $data) {?>
                         <tr>
                             <td><?php echo $data['Title']?></td>
                             <td><?php echo $data['Description']?></td>
                         </tr>
-                        <?php } ?> -->
-                        <tr>
-                            <td>kampret</td>
-                            <td>test</td>
-                        </tr>
+                        <?php } ?>
                     </tbody>
                     <tfoot>
                         <tr>
