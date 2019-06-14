@@ -1,7 +1,13 @@
 <!-- This is Content-Area -->
 <?php 
     $sql = "SELECT * FROM `spgallery`";
+
+    
     $data = mysqli_query($con, $sql); 
+    if(isset($_GET['delete'])){
+        mysqli_query($con, "DELETE FROM spGallery WHERE IdGallery=".$_GET['delete']);
+    }
+
 ?>
 <div class="column column-container">
     <div id="content">
@@ -14,7 +20,7 @@
                 <div class="form-links">
                     <a href="?page=gallery-add" class="add">Tambah</a>
                 </div>
-                <table id="myTable" >
+                <table id="myTable">
                     <thead>
                         <tr>
                             <th>Title</th>
@@ -23,13 +29,18 @@
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody  style="color:#000;">
+                    <tbody style="color:#000;">
                         <?php foreach($data as $data) {?>
                         <tr>
                             <td><?php echo $data['Title']?></td>
                             <td><?php echo $data['Description']?></td>
                             <td><?php echo $data['Date']?></td>
-                            <td></td>
+                            <td>
+                                <a href="?page=gallery-update?IdGallery=<?=$data['IdGallery']?>">
+                                    Update
+                                </a>
+                                <a href="?page=gallery&delete=<?=$data['IdGallery']?>">Delete</a>
+                            </td>
                         </tr>
                         <?php } ?>
                     </tbody>

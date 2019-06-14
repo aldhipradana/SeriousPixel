@@ -1,3 +1,10 @@
+# Documentation 
+
+# How To use
+
+Untuk membuka halaman admin 
+/admin
+
 # SeriousPixel
 
 !!!! Inget selalu apdet di branch development !!!
@@ -56,4 +63,6 @@ GUNAKAN PATTERN SEPERTI
 bg-NamaPage-NamaSectionYangMenggunakan  
 image-NamaPage-NamaSectionYangMenggunakan  
 
+### PENTING !!! ###
+### SELALU PULL DULU SEBELUM PUSH  ###
 
