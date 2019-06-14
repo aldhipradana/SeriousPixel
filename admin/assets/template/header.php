@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets\css\jquery.dataTables.min.css">
     <link rel="stylesheet" href="..\assets\css\styles.css">
     <link href="..\assets\fontawesome\css\all.css" rel="stylesheet">
+    <link href="..\assets\js\sweetalert\dist\sweetalert2.min.css" rel="stylesheet">
 </head>
 <section class="container-admin">
     <div class="row">
