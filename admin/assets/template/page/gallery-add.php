@@ -53,7 +53,7 @@
                             <input type="text" placeholder="Title" name="title" class="input-form"></div>
                         <div class="form-group">
                             <label class="label-form">Description</label>
-                            <textarea name="description" class="input-form" palaceholder="Description"></textarea>
+                            <textarea name="Description" class="input-form" placeholder="Description"></textarea>
                         </div>
                         <div class="form-group">
                             <label class="label-form">Select Your File</label>
