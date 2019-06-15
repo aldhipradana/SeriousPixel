@@ -1,4 +1,5 @@
 <!-- This is Content-Area -->
+
 <div class="column column-container">
     <div id="content">
         <div class="label-dashboard">
@@ -87,4 +88,5 @@
                         </div>
                     </div>
                 </div>
+  
                 <!-- Content-Area Ends here! -->

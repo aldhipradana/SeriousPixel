@@ -10,9 +10,6 @@ section.container-admin .column.column-container:last-child {
 section.container-admin .column_1_3:not(:last-child) {
     padding-right: 35px;
 }
-
-
-
 /* CONTENT DASHBOARD 3 COLUMN*/
 #content .content-dashboard .content-dashboard-container {
     padding-bottom: 20px;

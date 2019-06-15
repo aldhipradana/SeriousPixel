@@ -1,3 +1,3 @@
-function msg() {
-    Swal.fire('The Internet?', 'That thing is still around?', 'question')
-}
+// function success() {
+//     Swal.fire(title : "")
+// }

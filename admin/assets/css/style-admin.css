@@ -1,3 +1,7 @@
+body{
+    color: #000 !important;
+}
+
 #content {
     background-color: #292c30;
     padding: 20px;
@@ -19,16 +23,29 @@
 
 /* VIEW READ */
 #content .form-links a {
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     color: #fff;
 }
 #content .form-links a.add {
-    background: #007bff;
+    background: #292c30;
+    border: 1px solid #fff;
 }
 #content .form-links a.add:hover {
-    background: #0069d9;
+    background: #2a2c2d;
 }
+/* #content .form-links a.update {
+    background: #ffc107;
+}
+#content .form-links a.update:hover {
+    background: #e0a800;
+}
+#content .form-links a.delete {
+    background: #dc3545;
+}
+#content .form-links a.delete:hover {
+    background: #c82333;
+} */
 #content .dataTables_wrapper {
     padding: 30px 0;
 }
@@ -42,11 +59,24 @@
     font-family: MontserratSemiBold;
     font-size: 16px;
 }
+#content .dataTables_wrapper table {
+    padding: 20px 0;
+}
 #content .dataTables_wrapper table th {
     font-family: Source Sans Pro;
+    text-align: left;
+}
+#content .dataTables_wrapper table th:hover{
+   color: #917754;
 }
 #content .dataTables_wrapper table td {
     font-family: MontserratMedium;
+}
+#content .dataTables_wrapper table tbody tr:nth-child(odd) {
+    background: #cecece;
+}
+#content .dataTables_wrapper table tbody tr:hover {
+    background: #b5b3b3;
 }
 /* VIEW FORM */
 #content form .form-group {
@@ -72,7 +102,6 @@
 #content form .form-group textarea:focus {
     border-color: #80bdff;
 }
-
 #content form .form-group input[type=submit] {
     padding: 10px;
     border-radius: 5px;
@@ -90,6 +119,6 @@
 }
 
 /* Table */
-table tr td{
+table tr td {
     border-right: 1px solid #000;
 }

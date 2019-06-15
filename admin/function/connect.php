@@ -7,7 +7,7 @@
     $con = mysqli_connect($host, $user, $pass, $db) or die(mysqli_error($con));
     global $con;
     if ($con) {
-        echo "oalah";
+        // echo "oalah";
         return true;
     }
 ?>

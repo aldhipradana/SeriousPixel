@@ -1,11 +1,22 @@
 <!-- This is Content-Area -->
 <?php 
     $sql = "SELECT * FROM `spgallery`";
-
-    
     $data = mysqli_query($con, $sql); 
+    $dir   = "assets/images/gallery/";
+
     if(isset($_GET['delete'])){
-        mysqli_query($con, "DELETE FROM spGallery WHERE IdGallery=".$_GET['delete']);
+        $getId = $_GET['delete'];
+        $dataImg = mysqli_query($con, "SELECT Gambar FROM spGallery WHERE IdGallery = $getId");
+        $img = mysqli_fetch_array($dataImg);
+        $img = $dir.$img['Gambar'];
+        
+        if(!unlink($img)){
+            echo "<script> Gagal </scipt>";
+        }else{
+            mysqli_query($con, "DELETE FROM spGallery WHERE IdGallery=".$_GET['delete']);
+            echo "<script> </scipt>";
+            header ("Location : ?page=gallery");
+        }        
     }
 
 ?>
@@ -36,10 +47,12 @@
                             <td><?php echo $data['Description']?></td>
                             <td><?php echo $data['Date']?></td>
                             <td>
-                                <a href="?page=gallery-update?IdGallery=<?=$data['IdGallery']?>">
-                                    Update
-                                </a>
-                                <a href="?page=gallery&delete=<?=$data['IdGallery']?>">Delete</a>
+                                <div class="form-links">
+                                    <a class="update" href="?page=gallery-update?IdGallery=<?=$data['IdGallery']?>">
+                                        Update
+                                    </a>
+                                    <a class="delete" href="?page=gallery&delete=<?=$data['IdGallery']?>">Delete</a>
+                                </div>
                             </td>
                         </tr>
                         <?php } ?>
