@@ -1,5 +1,5 @@
 <!-- This is Footer -->
-              <?php
+<?php
 // ngetest
 echo "<script>msg();</script>";
 ?>
@@ -18,3 +18,10 @@ $('#myTable').DataTable();
 });
 </script>
 
+<script>
+jQuery(document).ready(function ($) {
+$('#sidebar-left .mobile-nav a').click(function (e) {
+$("ul.menu").slideToggle();
+});
+});
+</script>

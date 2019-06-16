@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="..\assets\css\styles.css">
     <link href="..\assets\fontawesome\css\all.css" rel="stylesheet">
     <link href="..\assets\js\sweetalert\dist\sweetalert2.min.css" rel="stylesheet">
-    
-<script src="..\assets\js\sweetalert\dist\sweetalert2.min.js"></script>
-<script src="function\function.js"></script>
+
+    <script src="..\assets\js\sweetalert\dist\sweetalert2.min.js"></script>
+    <script src="function\function.js"></script>
 </head>
 <section class="container-admin">
     <div class="row">
@@ -38,6 +38,9 @@
                     </div>
                     <div class="menu-sidebar">
                         <div class="label-menu">Navigation</div>
+                        <div class="mobile-nav">
+                            <a href="#">Menu</a>
+                        </div>
                         <ul class="menu">
                             <li>
                                 <a
