@@ -1,10 +1,12 @@
 <?php 
+    include_once('admin/function/init.php');
     if(isset($_POST['submit'])){
     $pengirim = $_POST['Pengirim'];
     $email = $_POST['Email'];
     $message = $_POST['Message'];
+    $phone = $_POST['Phone'];
 
-    $query = "INSERT INTO spmail(Pengirim, Email, Message) VALUES ('$pengirim', '$email', '$message')";
+    $query = "INSERT INTO spmail(Pengirim, Email, Phone, Message) VALUES ('$pengirim', '$email', '$phone', '$message')";
 
     $sql = mysqli_query($con, $query);
 
@@ -32,8 +34,7 @@
                             <th>Pengirim</th>
                             <th>Email</th>
                             <th>Phone</th>
-                            <th>Message</th>    
-                            
+                            <th>Message</th>
                         </tr>
                     </thead>
                         <tbody style="color:#000;">

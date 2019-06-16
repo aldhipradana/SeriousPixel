@@ -38,7 +38,7 @@
                 <tr>
                     <td>
                     <label for="inp" class="inp">
-                        <input type="text" id="inp" placeholder="&nbsp;">
+                        <input type="text" id="inp" placeholder="&nbsp;" name="Phone">
                         <span class="label">Phone</span>
                          <span class="border"></span>
                     </label>
