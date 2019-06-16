@@ -10,20 +10,6 @@
     <link href="..\assets\js\sweetalert\dist\sweetalert2.min.css" rel="stylesheet">
     <script src="..\assets\js\sweetalert\dist\sweetalert2.min.js"></script>
     <script src="function\function.js"></script>
-     <?php
-        session_start();
-        
-        if (isset($_SESSION['login']) != "login") {
-            if(isset($_COOKIE)){
-                echo "<script>
-                login_index();
-                </script>";
-            }
-            echo "<script>
-            login_alert();
-            </script>";
-        }
-    ?>
 </head>
 <section class="container-admin">
     <div class="row">
@@ -92,5 +78,19 @@
 
                 </div>
             </div>
-        </div>
+        </div>   
+        <?php
+            if (isset(($_COOKIE['popup'])) == 1) {
+                echo "<script>
+                login_index();
+                </script>";
+            }
+            
+        session_start();
+        if (!isset($_SESSION['login'])) {
+            echo "<script>
+            login_alert();
+            </script>";
+        }
+        ?>
         <!-- Sidebar-Left Ends here! -->
