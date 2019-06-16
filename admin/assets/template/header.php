@@ -67,9 +67,9 @@
                             </li>
                             <li>
                                 <a
-                                    href="?page=inbox"
+                                    href="?page=contact"
                                     target="_self"
-                                    <?php if(isset($page) && $page == "inbox") { echo "class='current'";} ?>>
+                                    <?php if(isset($page) && $page == "contact") { echo "class='current'";} ?>>
                                     <span class="fa fa-envelope"></span>
                                     Inbox</a>
                             </li>

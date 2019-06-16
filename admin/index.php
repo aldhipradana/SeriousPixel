@@ -15,9 +15,9 @@ include_once('function/init.php');
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\pricelist.php');  
             break;
-            case 'inbox':
+            case 'contact':
                 include_once('assets\template\header.php');
-                include_once('assets\template\page\inbox.php');  
+                include_once('assets\template\page\contact.php');  
             break;
             case 'gallery-add':
                 $page = "gallery";
