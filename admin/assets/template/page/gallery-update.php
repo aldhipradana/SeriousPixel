@@ -3,7 +3,10 @@
     // Use Code below if category was created
     // $catSql = "SELECT * FROM spcategory ORDER BY NamaCategory ASC";
     // $loadCatg = mysqli_query($con, $catSql);
-
+    $getId = $_GET['IdGallery'];
+    $queryData = "SELECT * FROM spgallery WHERE IdGallery=$getId";
+    $loadSql = mysqli_query($con, $queryData);
+    $gallery = mysqli_fetch_array($loadSql);
     if(isset($_POST['submit'])){
         $title  = $_POST['title'];
         $desc  = $_POST['description'];
@@ -18,6 +21,7 @@
         }
         $fileName = basename($_FILES["fileToUpload"]["name"]);
         $file = $dir . basename($_FILES["fileToUpload"]["name"]);
+        $oldFile = $dir . $gallery['Gambar'];
         $imageFileType = strtolower(pathinfo($file,PATHINFO_EXTENSION));
         if(isset($fileName) && $fileName !== "" && $fileName !== null){
             $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
@@ -26,7 +30,11 @@
                     echo "<script> alert(\"File already exists.\"); </script>";
                 }else{
                     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $file)) {
-                        $query = "INSERT INTO spgallery(Gambar, IdCategory, Title, Description) VALUES ('$fileName', '$idCat', '$title', '$desc')";
+                        unlink($oldFile);
+                        $query = "UPDATE `spgallery` SET    `IdCategory`='$idCat',
+                                                            `Gambar`='$fileName',
+                                                            `Title`='$title',
+                                                            `Description`='$desc' WHERE IdGallery=$getId";
                         $sql = mysqli_query($con, $query);
                         if($sql){
                             echo "<script> success(); </script>";
@@ -45,7 +53,7 @@
 <div class="column column-container">
     <div id="content">
         <div class="label-dashboard">
-            Add Gallery
+            Update Gallery
         </div>
 
         <div class="row content-dashboard">
@@ -54,7 +62,7 @@
                     <form action="" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                             <label class="label-form">Title</label>
-                            <input type="text" placeholder="Title" name="title" class="input-form"></div>
+                            <input type="text" placeholder="Title" name="title" class="input-form" value="<?php echo $gallery['Title']; ?>"></div>
                         <div class="form-group custom-select">
                             <label class="label-form">Category</label>
                             <select name="category" > 
@@ -69,14 +77,14 @@
                         </div>
                         <div class="form-group">
                             <label class="label-form">Description</label>
-                            <textarea name="description" class="input-form" palaceholder="Description"></textarea>
+                            <textarea name="description" class="input-form" palaceholder="Description"><?php echo $gallery['Description']; ?></textarea>
                         </div>
                         <div class="form-group">
                             <label class="label-form">Select Your File</label>
                             <input type="file" name="fileToUpload" id="fileToUpload">
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" value="Tambah Data">
+                            <input type="submit" name="submit" value="Update Data">
                         </div>
                     </form>
                 </div>

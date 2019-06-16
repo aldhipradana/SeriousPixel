@@ -14,8 +14,8 @@
             echo "<script> Gagal </scipt>";
         }else{
             mysqli_query($con, "DELETE FROM spGallery WHERE IdGallery=".$_GET['delete']);
-            echo "<script> </scipt>";
-            header ("Location : ?page=gallery");
+            echo "<script> success(); </script>";
+            header("Refresh:0; url=index.php?page=gallery");
         }        
     }
 
@@ -48,7 +48,7 @@
                             <td><?php echo $data['Date']?></td>
                             <td>
                                 <div class="form-links">
-                                    <a class="update" href="?page=gallery-update?IdGallery=<?=$data['IdGallery']?>">
+                                    <a class="update" href="?page=gallery-update&IdGallery=<?=$data['IdGallery']?>">
                                         Update
                                     </a>
                                     <a class="delete" href="?page=gallery&delete=<?=$data['IdGallery']?>">Delete</a>
