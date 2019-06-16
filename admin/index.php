@@ -19,6 +19,10 @@ include_once('function/init.php');
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\contact.php');  
             break;
+            case 'user':
+                include_once('assets\template\header.php');
+                include_once('assets\template\page\user.php');  
+            break;
             case 'gallery-add':
                 $page = "gallery";
                 include_once('assets\template\header.php');

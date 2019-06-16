@@ -14,6 +14,7 @@
                 $_SESSION['pass']   = $data['Password'];
                 $_SESSION['nama']   = $data['Nama'];
                 $_SESSION['email']  = $data['Email']; 
+                $_SESSION['telp']  = $data['NoTelp']; 
                 $_SESSION['foto']   = $data['FotoUser'];
             }
             $_SESSION['login'] = "login";

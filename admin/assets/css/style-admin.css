@@ -152,6 +152,7 @@ table.dataTable tr td {
     font-weight: 700;
     color: #fff;
     border: 1px solid #fff;
+    cursor: pointer;
 }
 #content .form-links a.add {
     background: #292c30;
@@ -188,4 +189,9 @@ table.dataTable tr td {
 }
 .swal2-content {
     font-family: MontserratLight;
+}
+
+
+#content .form-group img {
+    margin: 20px 0px;
 }

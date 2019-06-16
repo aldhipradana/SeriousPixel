@@ -27,8 +27,8 @@
                                 <img src="assets\images\Admin-Logo.png" alt="Logo"></a>
                         </div>
                         <div class="profile-image">
-                            <img src="assets\images\admin\<?=$_SESSION['foto'] ?>" alt="Admin Image" class="tilt">
-                            <div class="profile-name"><?=$_SESSION['nama']?></div>
+                            <img src="assets\images\admin\<?php if(isset($_SESSION['foto'])) echo $_SESSION['foto'];?>" alt="Admin Image" class="tilt">
+                            <div class="profile-name"><?php if(isset($_SESSION['nama'])) echo $_SESSION['nama'];?></div>
                             <div class="links">
                                 <a href="?page=user">
                                     <span class="fa fa-cog fa-spin"></span>
