@@ -46,7 +46,16 @@ function fail_delete() {
         confirmButtonText: "Coba Lagi"
     });
 }
-
+function session_out() {
+    Swal.fire({
+        title: "Waktu Sesi Anda Habis !",
+        text: "Silahkan untuk login kembali",
+        type: "info",
+        confirmButtonText: "Login Kembali "
+    }).then(function () {
+        window.location.href = "login.php";
+    });
+}
 function login_alert() {
     Swal.fire({
         title: "Peringatan !",
@@ -54,11 +63,9 @@ function login_alert() {
         type: "warning",
         confirmButtonText: "Login"
     }).then(function(){
-        // alert("kampret");
         window.location.href = "login.php";
     });
 }
-
 function login_index() {
     const Toast = Swal.mixin({
         toast: true,

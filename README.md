@@ -9,6 +9,9 @@ EaseScrollJs
 Untuk membuka halaman admin 
 /admin
 
+BILA TIDAK BISA LOGIN
+IMPORT DATABASE TERBARU DAN BUAT AKUN USER DI TABLE SPUSER
+
 # SeriousPixel
 
 !!!! Inget selalu apdet di branch development !!!

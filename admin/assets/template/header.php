@@ -12,6 +12,9 @@
     <script src="..\assets\js\sweetalert\dist\sweetalert2.min.js"></script>
     <script src="function\function.js"></script>
 </head>
+<?php 
+        session_start();
+?>
 <section class="container-admin">
     <div class="row">
         <!-- Sidebar-Left starts here! -->
@@ -24,10 +27,10 @@
                                 <img src="assets\images\Admin-Logo.png" alt="Logo"></a>
                         </div>
                         <div class="profile-image">
-                            <img src="assets\images\TestAdmin.png" alt="Admin Image" class="tilt">
-                            <div class="profile-name">Anthony Lee</div>
+                            <img src="assets\images\admin\<?=$_SESSION['foto'] ?>" alt="Admin Image" class="tilt">
+                            <div class="profile-name"><?=$_SESSION['nama']?></div>
                             <div class="links">
-                                <a href="#">
+                                <a href="?page=user">
                                     <span class="fa fa-cog fa-spin"></span>
                                 </a>
                                 <a href="?page=logout">
@@ -81,16 +84,22 @@
             </div>
         </div>   
         <?php
-            if (isset(($_COOKIE['popup'])) == 1) {
-                echo "<script>
-                login_index();
-                </script>";
-            }
-            
-        session_start();
         if (!isset($_SESSION['login'])) {
             echo "<script>
             login_alert();
+            </script>";
+        }
+        
+        if (isset($_SESSION['login'])) {
+            if (!isset(($_COOKIE['session_time']))) {
+                echo "<script>
+            session_out();
+            </script>";
+            }
+        }
+        if (isset(($_COOKIE['popup'])) == 1) {
+            echo "<script>
+            login_index();
             </script>";
         }
         ?>

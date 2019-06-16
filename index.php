@@ -35,13 +35,11 @@
                 default:
                     include_once('assets\template\header-home.php');
                     include_once('assets\template\page\home.php');  
-                    break;
+                break;
             }
         } else {          
             include_once('assets\template\header-home.php');
             include_once('assets\template\page\home.php');  
         }
-
         include_once('assets\template\footer.php');
-
     ?>
