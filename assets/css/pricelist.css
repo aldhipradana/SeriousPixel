@@ -80,6 +80,6 @@ section.Pricesection .row .column a {
         display: block;
     }
     section.Pricesection .Box {
-        height: unset;
+        height: unset;    
     }
 }
