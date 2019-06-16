@@ -1,5 +1,6 @@
 <head>
     <title>Admin</title>
+    <link rel="icon" href="..\assets\images\Logo126.png" type="image/x-icon" />
     <link rel="stylesheet" href="assets\css\dashboard.css">
     <link rel="stylesheet" href="assets\css\header.css">
     <link rel="stylesheet" href="assets\css\footer.css">
