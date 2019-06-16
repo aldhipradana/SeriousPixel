@@ -16,22 +16,27 @@
                 <tr>
                     <td>
                     <label for="inp" class="inp">
-                        <input type="text" id="inp" placeholder="&nbsp;">
+                        <input type="text" id="inp" placeholder="&nbsp;" name="Pengirim">
                         <span class="label">Your Name</span>
                          <span class="border"></span>
-                    </label>  <label for="inp" class="inp">
-                        <input type="textarea" id="inp" placeholder="&nbsp;">
+                    </label>
+                    <label for="inp" class="inp">
+                        <input type="textarea" id="inp" placeholder="&nbsp;" name="Message">
                         <span class="label">Your Message</span>
                          <span class="border"></span>
                     </label>
 </tr>
                     <td>
                     <label for="inp" class="inp">
-                        <input type="text" id="inp" placeholder="&nbsp;">
+                        <input type="text" id="inp" placeholder="&nbsp;" name="Email">
                         <span class="label">Email</span>
                          <span class="border"></span>
                     </label>
-                  
+                    <label for="inp" class="inp">
+                        <input type="textarea" id="inp" placeholder="&nbsp;">
+                        <span class="label">Your Message</span>
+                         <span class="border"></span>
+                    </label>
                     </td>
                 </tr>
                 <tr>
@@ -45,7 +50,7 @@
                 </tr>
                 <tr>
                     <td class="submit">
-                    <input type="submit" value="Send" name="post" id="comment-submit" class="button">
+                    <input type="submit" value="Send" name="submit" id="comment-submit" class="button">
                     </td>
                 </tr>
                 
