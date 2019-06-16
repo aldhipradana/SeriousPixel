@@ -1,8 +1,4 @@
 <!-- This is Footer -->
-<?php
-// ngetest
-echo "<script>msg();</script>";
-?>
 <!-- Footer Ends here! -->
 </div>
 </div>

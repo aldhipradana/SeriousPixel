@@ -8,9 +8,22 @@
     <link rel="stylesheet" href="..\assets\css\styles.css">
     <link href="..\assets\fontawesome\css\all.css" rel="stylesheet">
     <link href="..\assets\js\sweetalert\dist\sweetalert2.min.css" rel="stylesheet">
-
     <script src="..\assets\js\sweetalert\dist\sweetalert2.min.js"></script>
     <script src="function\function.js"></script>
+     <?php
+        session_start();
+        
+        if (isset($_SESSION['login']) != "login") {
+            if(isset($_COOKIE)){
+                echo "<script>
+                login_index();
+                </script>";
+            }
+            echo "<script>
+            login_alert();
+            </script>";
+        }
+    ?>
 </head>
 <section class="container-admin">
     <div class="row">
@@ -30,7 +43,7 @@
                                 <a href="#">
                                     <span class="fa fa-cog fa-spin"></span>
                                 </a>
-                                <a href="#">
+                                <a href="?page=logout">
                                     <span class="fa fa-power-off"></span>
                                 </a>
                             </div>

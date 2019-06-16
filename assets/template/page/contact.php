@@ -19,25 +19,19 @@
                         <input type="text" id="inp" placeholder="&nbsp;">
                         <span class="label">Your Name</span>
                          <span class="border"></span>
-                    </label>
-                    <label for="inp" class="inp">
-                        <input type="text" id="inp" placeholder="&nbsp;">
-                        <span class="label">Booking Details</span>
+                    </label>  <label for="inp" class="inp">
+                        <input type="textarea" id="inp" placeholder="&nbsp;">
+                        <span class="label">Your Message</span>
                          <span class="border"></span>
                     </label>
-                    </td>
-                <tr>
+</tr>
                     <td>
                     <label for="inp" class="inp">
                         <input type="text" id="inp" placeholder="&nbsp;">
                         <span class="label">Email</span>
                          <span class="border"></span>
                     </label>
-                    <label for="inp" class="inp">
-                        <input type="textarea" id="inp" placeholder="&nbsp;">
-                        <span class="label">Your Message</span>
-                         <span class="border"></span>
-                    </label>
+                  
                     </td>
                 </tr>
                 <tr>

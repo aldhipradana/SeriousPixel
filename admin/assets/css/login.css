@@ -53,6 +53,7 @@ body :-ms-input-placeholder {
   transition-duration: 1s;
   transition-timing-function: ease-in-put;  
   font-weight: 200;
+  color: #fff;
 }
 form {
   padding: 20px 0;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 08, 2019 at 05:06 PM
+-- Generation Time: Jun 16, 2019 at 04:59 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.0.29
 
@@ -33,6 +33,13 @@ CREATE TABLE `spcategory` (
   `NamaCategory` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `spcategory`
+--
+
+INSERT INTO `spcategory` (`IdCategory`, `NamaCategory`) VALUES
+(1, 'Kampret');
+
 -- --------------------------------------------------------
 
 --
@@ -48,6 +55,16 @@ CREATE TABLE `spgallery` (
   `Date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `spgallery`
+--
+
+INSERT INTO `spgallery` (`IdGallery`, `IdCategory`, `Gambar`, `Title`, `Description`, `Date`) VALUES
+(1, 0, 'C:xampphtdocsSeriousPixeladminassetsimagesgallery 736431_1.jpg', 'asd', '', '2019-06-16 06:03:29'),
+(2, 0, 'C:xampphtdocsSeriousPixeladminassetsimagesgallery 4566234-0851010030-aluca.png', 'asd', '', '2019-06-16 06:05:02'),
+(3, 0, '61d9cecb4921245cf999a6a2daca2f2d.jpg', 'asd', 'asd', '2019-06-16 09:07:03'),
+(4, 0, 'euy.png', 'asd', 'asd', '2019-06-16 09:15:02');
+
 -- --------------------------------------------------------
 
 --
@@ -58,6 +75,7 @@ CREATE TABLE `spmail` (
   `IdMail` int(11) NOT NULL,
   `Pengirim` varchar(100) NOT NULL,
   `Email` varchar(100) NOT NULL,
+  `Phone` varchar(10) NOT NULL,
   `Message` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -92,6 +110,13 @@ CREATE TABLE `spuser` (
   `Access` varchar(10) NOT NULL,
   `Status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `spuser`
+--
+
+INSERT INTO `spuser` (`IdUser`, `Username`, `Password`, `Nama`, `Email`, `NoTelp`, `FotoUser`, `Access`, `Status`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Anthony', 'anthonyleembahmo@gmail.com', '087760303967', '', 'admin', 'aktif');
 
 --
 -- Indexes for dumped tables
@@ -135,13 +160,13 @@ ALTER TABLE `spuser`
 -- AUTO_INCREMENT for table `spcategory`
 --
 ALTER TABLE `spcategory`
-  MODIFY `IdCategory` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `IdCategory` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `spgallery`
 --
 ALTER TABLE `spgallery`
-  MODIFY `IdGallery` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `IdGallery` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `spmail`
@@ -159,7 +184,7 @@ ALTER TABLE `sppackage`
 -- AUTO_INCREMENT for table `spuser`
 --
 ALTER TABLE `spuser`
-  MODIFY `IdUser` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `IdUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

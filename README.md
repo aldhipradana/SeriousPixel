@@ -1,5 +1,9 @@
-# Documentation 
-
+# Apa saja yang digunakan
+PHP
+MySQL
+Jquery
+Sweetalert
+EaseScrollJs
 # How To use
 
 Untuk membuka halaman admin 

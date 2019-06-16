@@ -2,6 +2,7 @@ body {
     color: #000;
 }
 
+/* STYLING CONTENT DASHBOARD */
 #content {
     background-color: #292c30;
     padding: 20px;
@@ -20,36 +21,8 @@ body {
     padding-top: 20px;
     display: flex;
 }
-/* VIEW READ */
-#content .form-links a {
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 17px;
-    font-weight: 700;
-    color: #fff;
-    border: 1px solid #fff;
-}
-#content .form-links a.add {
-    background: #292c30;
-}
-#content .form-links a.add:hover {
-    background: #2a2c2d;
-}
-#content table.dataTable .form-links a {
-    margin-right: 5px;
-}
-#content .form-links a.update {
-    background: #ffc107;
-}
-#content .form-links a.update:hover {
-    background: #e0a800;
-}
-#content .form-links a.delete {
-    background: #dc3545;
-}
-#content .form-links a.delete:hover {
-    background: #c82333;
-}
+
+/* STYLING DATATABLE */
 #content .dataTables_wrapper {
     padding: 30px 0;
 }
@@ -129,7 +102,9 @@ table.dataTable tr td {
 #content .dataTables_wrapper table tbody tr:hover {
     color: #ffa936 !important;
 }
-/* VIEW FORM */
+
+/* STYLING BUAT INPUT NYA */
+
 #content form .form-group {
     padding: 10px;
 }
@@ -167,4 +142,50 @@ table.dataTable tr td {
 #content form .form-group input[type=submit]:focus,
 #content form .form-group input[type=submit]:hover {
     background: #2c2f33;
+}
+
+/* BUTTON DI LINKS */
+#content .form-links a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+}
+#content .form-links a.add {
+    background: #292c30;
+}
+#content .form-links a.add:hover {
+    background: #2a2c2d;
+}
+#content table.dataTable .form-links a {
+    margin-right: 5px;
+}
+#content .form-links a.update {
+    background: #ffc107;
+    border: unset;
+}
+#content .form-links a.update:hover {
+    background: #e0a800;
+}
+#content .form-links a.delete {
+    background: #dc3545;
+    border: unset;
+}
+#content .form-links a.delete:hover {
+    background: #c82333;
+}
+
+/* SWEETALERT CSS */
+.swal2-styled.swal2-confirm {
+    background-color: #1153ad;
+    font-family: Montserrat;
+    font-size: 1.3625em;
+}
+.swal2-title {
+    font-family: MontserratSemiBold;
+}
+.swal2-content {
+    font-family: MontserratLight;
 }

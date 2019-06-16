@@ -49,6 +49,10 @@ include_once('function/init.php');
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\user-update.php');  
                 break;
+            case 'logout':
+            header("Location: logout.php");
+            break;
+            
             default:
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\dashboard.php');  
@@ -57,11 +61,7 @@ include_once('function/init.php');
     } else {          
         include_once('assets\template\header.php');
         include_once('assets\template\page\dashboard.php');  
-    }
-
-    //    if($page != "login"){
-    //         header("Location: login.php");
-    //    }
+    } 
     include_once('assets\template\footer.php');
 
     ?>
