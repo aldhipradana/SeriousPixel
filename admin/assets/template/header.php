@@ -91,13 +91,13 @@
         }
         
         if (isset($_SESSION['login'])) {
-            if (!isset(($_COOKIE['session_time']))) {
+            if (!isset($_COOKIE['session_time'])) {
                 echo "<script>
             session_out();
             </script>";
             }
         }
-        if (isset(($_COOKIE['popup'])) == 1) {
+        if (isset($_COOKIE['popup']) == 1) {
             echo "<script>
             login_index();
             </script>";
