@@ -5,7 +5,12 @@
     $data = mysqli_query($con, $sql);
     if(isset($_GET['delete'])){
         mysqli_query($con, "DELETE FROM spPackage WHERE IdPackage=".$_GET['delete']);
-        header("location: pricelist.php");
+        ?>
+            <script> 
+                var url="index.php?page=pricelist";     
+                success_delete(url); 
+            </script>
+        <?php  
     }
 
 ?>
@@ -39,7 +44,7 @@
                                 <td><?php echo $data['HargaPackage']?></td>
                                 <td><?php echo $data['Level']?></td>
                                 <td>
-                                    <a href="?page=pricelist-update?IdPackage=<?=$data['IdPackage']?>">
+                                    <a href="?page=pricelist-update&IdPackage=<?=$data['IdPackage']?>">
                                     Update
                                     </a>
                                     <a href="?page=pricelist&delete=<?=$data['IdPackage']?>">Delete</a>

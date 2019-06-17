@@ -10,10 +10,12 @@
         $sql = mysqli_query($con, $query);
 
         if($sql){
-            echo "<script> alert (\"Success\"); </script>";
-            header("location: ?page=pricelist.php");
-        }else{
-            echo "<script> alert(\"Sorry, there was an error uploading your file.\"); </script>";
+            ?>
+            <script> 
+                var url="index.php?page=pricelist";     
+                success_delete(url); 
+            </script>
+            <?php  
         }
     }
 ?>
