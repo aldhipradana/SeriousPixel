@@ -15,7 +15,9 @@
                         <div class="image-content-dashboard">
                             <img src="assets/images/Admin-Computer.png"></div>
                             <div class="number-content-dashboard">
-                                <div class="count">999</div>
+                                <div class="count"><?php 
+                                echo mysqli_num_rows(mysqli_query($con,"SELECT * FROM spviewcount"));
+                                ?></div>
                                 <div class="label">Total Views</div>
                             </div>
                         </div>

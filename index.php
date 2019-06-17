@@ -1,4 +1,17 @@
 <?php
+        include_once("admin/function/init.php");
+        $user_ip=$_SERVER['REMOTE_ADDR'];
+        $ipQuery = "SELECT * FROM spviewcount WHERE userIp = '$user_ip'";
+        echo $ipQuery;
+        $ipSql = mysqli_query($con, $ipQuery);
+        if($ipSql){
+            $rowcount = mysqli_num_rows($ipSql);
+            if($rowcount > 0){
+                
+            }else{
+                mysqli_query($con,"INSERT INTO spviewcount(userIp) VALUES('$user_ip')");
+            }
+        }
         if (isset($_GET['page'])) {
             $page = $_GET['page'];
             switch ($page) {
