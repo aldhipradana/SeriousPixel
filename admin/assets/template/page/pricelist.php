@@ -41,13 +41,16 @@
                             <tr>
                                 <td><?php echo $data['NamaPackage']?></td>
                                 <td><?php echo $data['DescriptionPackage']?></td>
-                                <td><?php echo $data['HargaPackage']?></td>
+                                <td><?php echo "$"; echo $data['HargaPackage']?></td>
                                 <td><?php echo $data['Level']?></td>
                                 <td>
-                                    <a href="?page=pricelist-update&IdPackage=<?=$data['IdPackage']?>">
-                                    Update
-                                    </a>
-                                    <a href="?page=pricelist&delete=<?=$data['IdPackage']?>">Delete</a>
+                                    <div class="form-links">
+                                        <a class="update" href="?page=pricelist-update&IdPackage=<?=$data['IdPackage']?>">
+                                        Update
+                                         </a>
+                                         <a class="delete" href="?page=pricelist&delete=<?=$data['IdPackage']?>">Delete</a>
+                                    </div>
+                                    
                                 </td>
                             </tr>
                             <?php } ?>
