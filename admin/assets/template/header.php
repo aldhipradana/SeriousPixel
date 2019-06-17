@@ -71,6 +71,14 @@
                             </li>
                             <li>
                                 <a
+                                    href="?page=category"
+                                    target="_self"
+                                    <?php if(isset($page) && $page == "category") { echo "class='current'";} ?>>
+                                    <span class="fa fa-envelope"></span>
+                                    Category</a>
+                            </li>
+                        <li>
+                                <a
                                     href="?page=contact"
                                     target="_self"
                                     <?php if(isset($page) && $page == "contact") { echo "class='current'";} ?>>
@@ -98,9 +106,12 @@
             }
         }
         if (isset($_COOKIE['popup']) == 1) {
-            echo "<script>
-            login_index();
-            </script>";
+            ?>
+            <script> 
+                var user="<?=$_SESSION['usname']; ?>"; 
+                login_index(user); 
+            </script>
+            <?php
         }
         ?>
         <!-- Sidebar-Left Ends here! -->

@@ -15,6 +15,10 @@ include_once('function/init.php');
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\pricelist.php');  
             break;
+            case 'category':
+                include_once('assets\template\header.php');
+                include_once('assets\template\page\category.php');  
+            break;
             case 'contact':
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\contact.php');  
@@ -33,6 +37,10 @@ include_once('function/init.php');
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\pricelist-add.php');  
             break;
+            case 'category-add':
+                include_once('assets\template\header.php');
+                include_once('assets\template\page\category-add.php');  
+            break;
             case 'user-add':
                 $page = "user";
                 include_once('assets\template\header.php');
@@ -48,6 +56,10 @@ include_once('function/init.php');
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\pricelist-update.php');  
                 break;
+            case 'category-update':
+                include_once('assets\template\header.php');
+                include_once('assets\template\page\category-update.php');  
+            break;
             case 'user-update':
                 $page = "user";
                 include_once('assets\template\header.php');

@@ -70,7 +70,7 @@ function login_alert() {
         window.location.href = "login.php";
     });
 }
-function login_index() {
+function login_index(x) {
     const Toast = Swal.mixin({
         toast: true,
         position: 'top-end',
@@ -79,6 +79,7 @@ function login_index() {
     });
     Toast.fire({
         type: 'success',
-        title: 'Berhasil Login'
+        title: 'Selamat Datang, '+ x
     });
+    console.log(x);
 }

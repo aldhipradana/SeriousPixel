@@ -1,24 +1,22 @@
 <?php 
-    include_once('admin/function/init.php');
-    if(isset($_POST['submit'])){
-    $pengirim = $_POST['Pengirim'];
-    $email = $_POST['Email'];
-    $message = $_POST['Message'];
-    $phone = $_POST['Phone'];
-
-    $query = "INSERT INTO spmail(Pengirim, Email, Phone, Message) VALUES ('$pengirim', '$email', '$phone', '$message')";
-
-    $sql = mysqli_query($con, $query);
-
-    if($sql){
-        echo "<script> alert (\"Success\"); </script>";
-        header("location: ?page=contact.php");
-    }else{
-        echo "<script> alert(\"Sorry, there was an error uploading your file.\"); </script>";
-    }
-}
     $sql2 = "SELECT * FROM `spmail`";
     $data = mysqli_query($con, $sql2);
+
+
+    if(isset($_GET['delete'])){
+        $getId = $_GET['delete'];
+        
+        $sql = mysqli_query($con, "DELETE FROM spMail WHERE idMail=".$_GET['delete']);
+        // header("Refresh:0; ");
+        if($sql){
+        ?>
+            <script> 
+                var url="index.php?page=contact"; 
+                success_delete(url); 
+            </script>
+        <?php       
+        }
+    }
 ?>
 <div class="column column-container">
     <div id="content">
@@ -35,6 +33,7 @@
                             <th>Email</th>
                             <th>Phone</th>
                             <th>Message</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                         <tbody style="color:#000;">
@@ -44,6 +43,12 @@
                                 <td><?php echo $data['Email']?></td>
                                 <td><?php echo $data['Phone']?></td>
                                 <td><?php echo $data['Message']?></td>
+                                
+                                <td>
+                                <div class="form-links">
+                                    <a href="?page=contact&delete=<?=$data['IdMail']?>">Delete</a>
+                                </div>
+                                </td>
                             </tr>
                             <?php } ?>
                         </tbody>

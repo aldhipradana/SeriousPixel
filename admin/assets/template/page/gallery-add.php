@@ -13,8 +13,6 @@
         $dir   = getcwd()."/assets/images/gallery/";
         if (!file_exists($dir)) {
             mkdir($dir, 007, true);
-        }else{
-            echo "<script> alert(\"File already exists.\"); </script>";
         }
         $fileName = basename($_FILES["fileToUpload"]["name"]);
         $file = $dir . basename($_FILES["fileToUpload"]["name"]);
@@ -29,8 +27,12 @@
                         $query = "INSERT INTO spgallery(Gambar, IdCategory, Title, Description) VALUES ('$fileName', '$idCat', '$title', '$desc')";
                         $sql = mysqli_query($con, $query);
                         if($sql){
-                            echo "<script> success(); </script>";
-                            header("Location: ?page=gallery");
+                            ?>
+                            <script> 
+                                var url="index.php?page=gallery"; 
+                                success_delete(url); 
+                            </script>
+                        <?php
                         }
                     } else {
                         echo "<script> alert(\"Sorry, there was an error uploading your file.\"); </script>";
