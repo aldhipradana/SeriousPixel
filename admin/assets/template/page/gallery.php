@@ -14,8 +14,13 @@
             echo "<script> Gagal </scipt>";
         }else{
             mysqli_query($con, "DELETE FROM spGallery WHERE IdGallery=".$_GET['delete']);
-            echo "<script> success(); </script>";
-            header("Refresh:0; url=index.php?page=gallery");
+            // header("Refresh:0; ");
+            ?>
+                <script> 
+                    var url="index.php?page=gallery"; 
+                    success_delete(url); 
+                </script>
+            <?php
         }        
     }
 

@@ -30,12 +30,16 @@ function fail_update() {
             confirmButtonText: "Coba Lagi"
         });
 }
-function success_delete() {
+function success_delete(x) {
     Swal.fire({
         title: "Selamat !",
         text: "Berhasil Menghapus Data",
         type: "success",
         confirmButtonText: "Oke, Lanjutkan !"
+    }).then((deleted)=>{
+        if(deleted){
+            window.location.href = x;
+        }
     });
 }
 function fail_delete() {

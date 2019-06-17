@@ -19,11 +19,12 @@
         }else{
             echo "<script> alert(\"File already exists.\"); </script>";
         }
+        $dataUpdate = false;
         $fileName = basename($_FILES["fileToUpload"]["name"]);
         $file = $dir . basename($_FILES["fileToUpload"]["name"]);
         $oldFile = $dir . $gallery['Gambar'];
-        $imageFileType = strtolower(pathinfo($file,PATHINFO_EXTENSION));
         if(isset($fileName) && $fileName !== "" && $fileName !== null){
+            $imageFileType = strtolower(pathinfo($file,PATHINFO_EXTENSION));
             $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
             if($check !== false) {
                 if (file_exists($file)) {
@@ -32,14 +33,10 @@
                     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $file)) {
                         unlink($oldFile);
                         $query = "UPDATE `spgallery` SET    `IdCategory`='$idCat',
-                                                            `Gambar`='$fileName',
-                                                            `Title`='$title',
-                                                            `Description`='$desc' WHERE IdGallery=$getId";
-                        $sql = mysqli_query($con, $query);
-                        if($sql){
-                            echo "<script> success(); </script>";
-                            header("Location: ?page=gallery");
-                        }
+                                            `Gambar`='$fileName',
+                                            `Title`='$title',
+                                            `Description`='$desc' WHERE IdGallery=$getId";
+                        $dataUpdate = true;
                     } else {
                         echo "<script> alert(\"Sorry, there was an error uploading your file.\"); </script>";
                     }
@@ -47,6 +44,22 @@
             } else {
                 echo "<script> alert(\"File is not an image.\"); </script>";
             }
+        }else {
+            $query = "UPDATE `spgallery` SET    `IdCategory`='$idCat',
+                                                `Title`='$title',
+                                                `Description`='$desc' WHERE IdGallery=$getId";
+            $dataUpdate = true;
+        }
+
+        
+        if($dataUpdate){
+            $sql = mysqli_query($con, $query);
+            if($sql){
+                echo "<script> success(); </script>";
+                header("Location: ?page=gallery");
+            }
+        }else {
+            echo "<script> alert(\"Data Failed to Update\"); </script>";
         }
     }
 ?>
