@@ -27,7 +27,14 @@
                                 <img src="assets\images\Admin-Logo.png" alt="Logo"></a>
                         </div>
                         <div class="profile-image">
-                            <img src="assets\images\admin\<?php if(isset($_SESSION['foto'])) echo $_SESSION['foto'];?>" alt="Admin Image" class="tilt">
+                            <img src="assets\images\admin\<?php 
+                            
+                            $dir = getcwd()."/assets/images/admin/";
+
+                            if(isset($_SESSION['foto']) && file_exists($dir.$_SESSION['foto'])) {echo $_SESSION['foto']; } 
+                            else { echo "admin.png";}
+                            ?>" 
+                            alt="Admin Image" class="tilt">
                             <div class="profile-name"><?php if(isset($_SESSION['nama'])) echo $_SESSION['nama'];?></div>
                             <div class="links">
                                 <a href="?page=user">

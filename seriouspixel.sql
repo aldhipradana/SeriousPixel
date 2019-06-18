@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 18, 2019 at 10:45 AM
+-- Generation Time: Jun 18, 2019 at 10:58 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.0.29
 
@@ -99,7 +99,7 @@ CREATE TABLE `spuser` (
 --
 
 INSERT INTO `spuser` (`IdUser`, `Username`, `Password`, `Nama`, `Email`, `NoTelp`, `FotoUser`, `Access`, `Status`) VALUES
-(1, 'anthony', '65fbef05e01fac390cb3fa073fb3e8cf', 'Anthony Lee', 'anthonyleembahmo@gmail.com', '087760303967', 'TestAdmin.png', 'admin', 'aktif'),
+(1, 'anthony', '65fbef05e01fac390cb3fa073fb3e8cf', 'Anthony Lee', 'anthonyleembahmo@gmail.com', '087760303967', 'Anthony.png', 'admin', 'aktif'),
 (2, 'tolik', '9ae570cb560efa1597205e5145bc6408', 'Ari Wijaya', '', '', 'Tolik.png', 'admin', 'aktif'),
 (3, 'dede', 'b4be1c568a6dc02dcaf2849852bdb13e', 'Tirta Mahayana', '', '', 'Dede.png', 'admin', 'aktif'),
 (4, 'aksel', '83a459084439c9f5e68189182e85c17c', 'Aksel Pratama', '', '', 'Aksel.png', 'admin', 'aktif'),
@@ -115,6 +115,13 @@ CREATE TABLE `spviewcount` (
   `idViewCount` int(11) NOT NULL,
   `userIp` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `spviewcount`
+--
+
+INSERT INTO `spviewcount` (`idViewCount`, `userIp`) VALUES
+(3, '::1');
 
 --
 -- Indexes for dumped tables
@@ -194,7 +201,7 @@ ALTER TABLE `spuser`
 -- AUTO_INCREMENT for table `spviewcount`
 --
 ALTER TABLE `spviewcount`
-  MODIFY `idViewCount` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idViewCount` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

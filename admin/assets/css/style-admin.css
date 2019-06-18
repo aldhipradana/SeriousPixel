@@ -155,6 +155,7 @@ table.dataTable tr td {
     color: #fff;
     border: 1px solid #fff;
     cursor: pointer;
+    transition: ease-in-out .3s !important; 
 }
 
 #content .form-group select {

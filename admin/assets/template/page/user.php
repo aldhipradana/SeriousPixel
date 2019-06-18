@@ -35,12 +35,19 @@
                     <div class="form-group">
                         <img
                             width="200px"
-                            src="assets\images\admin\<?php if(isset($_SESSION['foto'])) echo $_SESSION['foto'];?>"
+                            src="assets\images\admin\<?php 
+                            $dir = getcwd()."/assets/images/admin/";
+                            if (isset($_SESSION['foto']) && file_exists($dir.$_SESSION['foto'])) {
+                                echo $_SESSION['foto'];
+                            } else {
+                                echo "admin.png";
+                            }
+                            ?>"
                             alt="Admin Image">
                     </div>
                     <div class="form-links">
                         <a class="add" href="?page=user-add" style="border:1px solid #fff;">Tambah User Baru</a>
-                        <a class="update" href="?page=user-update&IdUser=<?=$data['IdGallery']?>" style="border:1px solid #fff;">
+                        <a class="update" href="?page=user-update&IdUser=<?=$_SESSION['id']?>" style="border:1px solid #fff;">
                             Edit Data
                         </a>
                     </div>
