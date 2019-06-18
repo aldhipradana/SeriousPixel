@@ -111,5 +111,17 @@ function login_index(x) {
         type: 'success',
         title: 'Selamat Datang, '+ x
     });
-    console.log(x);
+}
+
+function success_sent(pengirim, x) {
+    Swal.fire({
+        title: "Pesan sudah terkirim !",
+        text: "Terima kasih sudah mengirim "+ pengirim,
+        type: "success",
+        confirmButtonText: "Kembali"
+    }).then((deleted)=>{
+        if(deleted){
+            window.location.href = x;
+        }
+    });
 }
