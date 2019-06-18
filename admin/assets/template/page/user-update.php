@@ -57,9 +57,17 @@
         if ($dataUpdate) {
             $sql = mysqli_query($con, $query);
             if ($sql) {
+                    $_SESSION['id']     = $getId;
+                    $_SESSION['usname'] = $Username;
+                    $_SESSION['pass']   = $Password;
+                    $_SESSION['nama']   = $Nama;
+                    $_SESSION['email']  = $Email; 
+                    $_SESSION['telp']   = $NoTelp; 
+                    $_SESSION['foto']   = $fileName;
+                
                 ?>
                         <script> 
-                            var url="index.php?page=gallery"; 
+                            var url="index.php?page=user"; 
                             success_update(url); 
                         </script>
                     <?php
