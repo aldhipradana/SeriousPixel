@@ -31,19 +31,13 @@
                     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $file)) {
 
                         unlink($oldFile);
-                        $query = "UPDATE `spgallery` SET    `IdCategory`='$idCat',
-                                            `Username`='$Username',
-                                            `Password`='$Password',
-                                            `Nama`='$Nama',
-                                            `Email`='$Email',
-                                            `NoTelp`='$NoTelp',
-                                            `FotoUser`='$fileName',
-                                            `Access`='member',
-                                            `Status`='aktif' WHERE IdUser=$getId";
+                        $query = "UPDATE `spuser` SET `Username`='$Username',
+                                    `Password`='$Password',
+                                    `Nama`='$Nama',
+                                    `Email`='$Email',
+                                    `NoTelp`='$NoTelp',
+                                    `FotoUser`='$fileName' WHERE IdUser=$getId";
                         $dataUpdate = true;
-                       $sql = mysqli_query($con, $query);
-                        if($sql){
-                        }
                     } else {
                         echo "<script> alert(\"Sorry, there was an error uploading your file.\"); </script>";
                     }
@@ -51,8 +45,30 @@
             } else {
                 echo "<script> alert(\"File is not an image.\"); </script>";
             }
+        }else{
+            $query = "UPDATE `spuser` SET `Username`='$Username',
+                                    `Password`='$Password',
+                                    `Nama`='$Nama',
+                                    `Email`='$Email',
+                                    `NoTelp`='$NoTelp' WHERE IdUser=$getId";
+            $dataUpdate = true;
+
         }
+        if ($dataUpdate) {
+            $sql = mysqli_query($con, $query);
+            if ($sql) {
+                ?>
+                        <script> 
+                            var url="index.php?page=gallery"; 
+                            success_update(url); 
+                        </script>
+                    <?php
+            }
+        }
+
     }
+    
+
 ?>
 
 <div class="column column-container">

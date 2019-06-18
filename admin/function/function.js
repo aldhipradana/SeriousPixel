@@ -90,6 +90,16 @@ function login_alert() {
         window.location.href = "login.php";
     });
 }
+function no_access() {
+    Swal.fire({
+        title: "Peringatan !",
+        text: "Anda Tidak Memiliki hak akses",
+        type: "warning",
+        confirmButtonText: "Login"
+    }).then(function(){
+        window.location.href = "index.php?page=dashboard";
+    });
+}
 function login_index(x) {
     const Toast = Swal.mixin({
         toast: true,

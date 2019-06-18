@@ -46,8 +46,8 @@
             }
         }else {
             $query = "UPDATE `spgallery` SET    `IdCategory`='$idCat',
-                                                `Title`='$title',
-                                                `Description`='$desc' WHERE IdGallery=$getId";
+                            `Title`='$title',
+                            `Description`='$desc' WHERE IdGallery=$getId";
             $dataUpdate = true;
         }
 

@@ -14,13 +14,14 @@
 </head>
 <?php 
         session_start();
+      
 ?>
 <section class="container-admin">
     <div class="row">
         <!-- Sidebar-Left starts here! -->
         <div class="column column-container">
             <div id="sidebarleft" class="sidebar">
-                <div id="sidebar-left">
+                <div id="sidebar-left"> 
                     <div class="profile">
                         <div class="profile-logo">
                             <a href="#" class="logo">
@@ -29,13 +30,14 @@
                         <div class="profile-image">
                             <img src="assets\images\admin\<?php 
                             
-                            $dir = getcwd()."/assets/images/admin/";
+                        $dir = getcwd()."/assets/images/admin/";
 
                             if(isset($_SESSION['foto']) && file_exists($dir.$_SESSION['foto'])) {echo $_SESSION['foto']; } 
                             else { echo "admin.png";}
                             ?>" 
                             alt="Admin Image" class="tilt">
-                            <div class="profile-name"><?php if(isset($_SESSION['nama'])) echo $_SESSION['nama'];?></div>
+                            <div class="profile-name">
+                            <?php if(isset($_SESSION['nama'])) echo $_SESSION['nama'];?></div>
                             <div class="links">
                                 <a href="?page=user">
                                     <span class="fa fa-cog fa-spin"></span>
@@ -63,8 +65,17 @@
                             
                                 <?php 
                                 // MENGECEK HAK AKSES DARI USER YANG LOGIN
- 
-                            if(isset ($_SESSION['access'])){
+                                if(isset ($_SESSION['access'])){
+                                // REDIRECT PAGE
+                                if ($_SESSION['access'] == "member") {
+                                        if (!($page == 'dashboard' || $page == "contact" || $page == "user")) {  ?>
+                            <script>  
+                                no_access(); 
+                            </script>
+                        <?php
+                                        }
+                                    }
+                                // HIDE MENU 
                                 if($_SESSION['access'] == "admin") { ?>
                             <li>
                                 <a

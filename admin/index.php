@@ -4,6 +4,7 @@ include_once('function/init.php');
         $page = $_GET['page'];
         switch ($page) {
             case 'dashboard':
+            $page = 'dashboard'; 
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\dashboard.php');  
             break;
@@ -20,6 +21,7 @@ include_once('function/init.php');
                 include_once('assets\template\page\category.php');  
             break;
             case 'contact':
+            $page = "contact";
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\contact.php');  
             break;
@@ -70,6 +72,7 @@ include_once('function/init.php');
             break;
             
             default:
+            $page = 'dashboard';
                 include_once('assets\template\header.php');
                 include_once('assets\template\page\dashboard.php');  
                 break;
