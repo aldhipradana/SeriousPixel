@@ -1,8 +1,8 @@
 <!-- This is Content-Area -->
 <?php 
     // Use Code below if category was created
-    // $catSql = "SELECT * FROM spcategory ORDER BY NamaCategory ASC";
-    // $loadCatg = mysqli_query($con, $catSql);
+    $catSql = "SELECT * FROM spcategory ORDER BY NamaCategory ASC";
+    $loadCatg = mysqli_query($con, $catSql);
 
     if(isset($_POST['submit'])){
         $title  = $_POST['title'];
@@ -60,12 +60,10 @@
                         <div class="form-group custom-select">
                             <label class="label-form">Category</label>
                             <select name="category" > 
-                                <option value="1">Bagus</option>
-                                <option value="2">Jelek</option>
                                 <!-- Use code below if category was created -->
-                                <?php //foreach($loadCatg as $catData){ ?>
-                                <!-- <option value="<?php //echo $catData['IdCategory'];?>"><?php //echo $catData['NamaCategory'];?></option> -->
-                                <?php //} ?>
+                                <?php foreach($loadCatg as $catData){ ?>
+                                <option value="<?php echo $catData['IdCategory'];?>"><?php echo $catData['NamaCategory'];?></option>
+                                <?php } ?>
                                 
                             </select>
                         </div>

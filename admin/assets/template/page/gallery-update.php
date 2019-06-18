@@ -1,9 +1,9 @@
 <!-- This is Content-Area -->
 <?php 
     // Use Code below if category was created
-    // $catSql = "SELECT * FROM spcategory ORDER BY NamaCategory ASC";
-    // $loadCatg = mysqli_query($con, $catSql);
-    $getId = $_GET['IdGallery'];
+     $catSql = "SELECT * FROM spcategory ORDER BY NamaCategory ASC";
+     $loadCatg = mysqli_query($con, $catSql);
+     $getId = $_GET['IdGallery'];
     $queryData = "SELECT * FROM spgallery WHERE IdGallery=$getId";
     $loadSql = mysqli_query($con, $queryData);
     $gallery = mysqli_fetch_array($loadSql);
@@ -83,12 +83,10 @@
                         <div class="form-group custom-select">
                             <label class="label-form">Category</label>
                             <select name="category" > 
-                                <option value="1">Bagus</option>
-                                <option value="2">Jelek</option>
                                 <!-- Use code below if category was created -->
-                                <?php //foreach($loadCatg as $catData){ ?>
-                                <!-- <option value="<?php //echo $catData['IdCategory'];?>"><?php //echo $catData['NamaCategory'];?></option> -->
-                                <?php //} ?>
+                                <?php foreach($loadCatg as $catData){ ?>
+                                <option value="<?php echo $catData['IdCategory'];?>" <?php if($catData['IdCategory'] == $gallery['IdCategory']){ echo "selected=\"selected\" "; } ?>><?php echo $catData['NamaCategory'];?></option>
+                                <?php } ?>
                                 
                             </select>
                         </div>
