@@ -114,7 +114,7 @@
                             <input type="file" name="fileToUpload" id="fileToUpload">
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" value="Tambah">
+                            <input type="submit" name="submit" value="Update">
                         </div>
                     </form>
                 </div>
