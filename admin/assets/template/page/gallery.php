@@ -13,8 +13,7 @@
         if(!unlink($img)){
             echo "<script> Gagal </scipt>";
         }else{
-            mysqli_query($con, "DELETE FROM spGallery WHERE IdGallery=".$_GET['delete']);
-            // header("Refresh:0; ");
+            mysqli_query($con, "DELETE FROM spGallery WHERE IdGallery=".$_GET['delete']); 
             ?>
                 <script> 
                     var url="index.php?page=gallery"; 

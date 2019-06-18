@@ -1,34 +1,50 @@
-function success_add() {
+function success_add(x) {
     Swal.fire({
         title: "Selamat !", 
         text: "Berhasil Menambahkan Data", 
         type: "success", 
         confirmButtonText: "Oke, Lanjutkan !"
+    }).then((deleted) => {
+        if (deleted) {
+            window.location.href = x;
+        }
     });
 }
-function fail_add() {
+function fail_add(x) {
     Swal.fire({
         title: "Maaf !", 
         text: "Gagal Menambahkan Data", 
         type: "error", 
         confirmButtonText: "Coba Lagi"
+    }).then((deleted) => {
+        if (deleted) {
+            window.location.href = x;
+        }
     });
 }
-function success_update() {
+function success_update(x) {
     Swal.fire({
             title: "Selamat !", 
             text: "Berhasil Mengubah Data", 
             type: "success", 
             confirmButtonText: "Oke, Lanjutkan !"
-        });
+    }).then((deleted) => {
+        if (deleted) {
+            window.location.href = x;
+        }
+    });
 }
-function fail_update() {
+function fail_update(x) {
     Swal.fire({
             title: "Maaf !", 
             text: "Gagal Mengubah Data", 
             type: "error", 
             confirmButtonText: "Coba Lagi"
-        });
+    }).then((deleted) => {
+        if (deleted) {
+            window.location.href = x;
+        }
+    });
 }
 function success_delete(x) {
     Swal.fire({
@@ -48,6 +64,10 @@ function fail_delete() {
         text: "Gagal Menghapus Data",
         type: "error",
         confirmButtonText: "Coba Lagi"
+    }).then((deleted) => {
+        if (deleted) {
+            window.location.href = x;
+        }
     });
 }
 function session_out() {

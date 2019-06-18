@@ -13,7 +13,7 @@
             ?>
             <script> 
                 var url="index.php?page=pricelist";     
-                success_delete(url); 
+                success_add(url); 
             </script>
             <?php  
         }

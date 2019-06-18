@@ -30,7 +30,7 @@
                             ?>
                             <script> 
                                 var url="index.php?page=gallery"; 
-                                success_delete(url); 
+                                success_add(url); 
                             </script>
                         <?php
                         }

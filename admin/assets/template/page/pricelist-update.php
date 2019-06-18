@@ -22,7 +22,7 @@
             ?>
                 <script> 
                     var url="index.php?page=pricelist"; 
-                    success_delete(url); 
+                    success_update(url); 
                 </script>
             <?php  
             }

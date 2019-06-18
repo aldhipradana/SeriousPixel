@@ -74,7 +74,7 @@
                                     href="?page=category"
                                     target="_self"
                                     <?php if(isset($page) && $page == "category") { echo "class='current'";} ?>>
-                                    <span class="fa fa-envelope"></span>
+                                    <span class="fa fa-list-alt"></span>
                                     Category</a>
                             </li>
                         <li>
