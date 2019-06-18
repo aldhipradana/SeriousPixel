@@ -96,7 +96,7 @@
                         </div>
                         <div class="form-group">
                             <label class="label-form">Select Your File</label>
-                            <input type="file" name="fileToUpload" id="fileToUpload">
+                            <input type="file" name="fileToUpload" id="fileToUpload">+
                         </div>
                         <div class="form-group">
                             <input type="submit" name="submit" value="Update Data">
