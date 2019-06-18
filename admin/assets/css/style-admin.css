@@ -114,6 +114,7 @@ table.dataTable tr td {
     padding-bottom: 5px;
 }
 #content form .form-group input[type=text],
+#content form .form-group input[type=password],
 #content form .form-group textarea {
     display: block;
     width: 100%;
@@ -156,11 +157,11 @@ table.dataTable tr td {
     cursor: pointer;
 }
 
-#content .form-group select{
-    width:100%;
+#content .form-group select {
+    width: 100%;
 }
 #content .form-links a.add {
-    background: #292c30;
+    background: #1d1e1f;
 }
 #content .form-links a.add:hover {
     background: #2a2c2d;
@@ -196,7 +197,6 @@ table.dataTable tr td {
     font-family: MontserratLight;
 }
 
-
 #content .form-group img {
-    margin: 20px 0px;
+    margin: 20px 0;
 }

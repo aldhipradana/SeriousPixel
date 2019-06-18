@@ -53,6 +53,12 @@
                                     <span class="fa fa-home"></span>
                                     Dashboard</a>
                             </li>
+                            
+                                <?php 
+                                // MENGECEK HAK AKSES DARI USER YANG LOGIN
+ 
+                            if(isset ($_SESSION['access'])){
+                                if($_SESSION['access'] == "admin") { ?>
                             <li>
                                 <a
                                     href="?page=gallery"
@@ -77,6 +83,7 @@
                                     <span class="fa fa-list-alt"></span>
                                     Category</a>
                             </li>
+                                <?php  }} ?>
                         <li>
                                 <a
                                     href="?page=contact"

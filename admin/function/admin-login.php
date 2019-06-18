@@ -16,6 +16,7 @@
                 $_SESSION['email']  = $data['Email']; 
                 $_SESSION['telp']   = $data['NoTelp']; 
                 $_SESSION['foto']   = $data['FotoUser'];
+                $_SESSION['access']   = $data['Access'];
             }
             $_SESSION['login'] = "login";
             // SET COOKIE UNTUK LOGIN TIME

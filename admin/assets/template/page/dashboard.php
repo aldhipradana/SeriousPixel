@@ -51,7 +51,7 @@
                                     <div class="number-content-dashboard">
                                         <div class="count"><?=mysqli_fetch_array(mysqli_query($con, "SELECT COUNT(Count) from (select spgallery.IdCategory as Count from spgallery group by IdCategory) as Count"))[0];?>
 </div>
-                                        <div class="label">Total Photo</div>
+                                        <div class="label">Total Gallery</div>
                                     </div>
                                 </div>
 

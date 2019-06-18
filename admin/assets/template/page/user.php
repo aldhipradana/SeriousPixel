@@ -39,7 +39,7 @@
                             alt="Admin Image">
                     </div>
                     <div class="form-links">
-                        <a class="add" href="?page=gallery&delete=<?=$data['IdGallery']?>" style="border:1px solid #fff;">Tambah User Baru</a>
+                        <a class="add" href="?page=user-add" style="border:1px solid #fff;">Tambah User Baru</a>
                         <a class="update" href="?page=user-update&IdUser=<?=$data['IdGallery']?>" style="border:1px solid #fff;">
                             Edit Data
                         </a>
