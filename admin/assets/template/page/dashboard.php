@@ -33,7 +33,7 @@
                             <div class="image-content-dashboard">
                                 <img src="assets/images/Admin-Camera.png"></div>
                                 <div class="number-content-dashboard">
-                                    <div class="count">999</div>
+                                    <div class="count"><?=mysqli_fetch_array(mysqli_query($con, "SELECT COUNT(IdGallery) FROM spgallery"))[0];?></div>
                                     <div class="label">Total Photo</div>
                                 </div>
                             </div>
@@ -49,7 +49,8 @@
                                 <div class="image-content-dashboard">
                                     <img src="assets/images/Admin-Gallery.png"></div>
                                     <div class="number-content-dashboard">
-                                        <div class="count">999</div>
+                                        <div class="count"><?=mysqli_fetch_array(mysqli_query($con, "SELECT COUNT(Count) from (select spgallery.IdCategory as Count from spgallery group by IdCategory) as Count"))[0];?>
+</div>
                                         <div class="label">Total Photo</div>
                                     </div>
                                 </div>

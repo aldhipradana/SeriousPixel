@@ -17,7 +17,7 @@
         if (!file_exists($dir)) {
             mkdir($dir, 007, true);
         }else{
-            echo "<script> alert(\"File already exists.\"); </script>";
+            // echo "<script> alert(\"File already exists.\"); </script>";
         }
         $dataUpdate = false;
         $fileName = basename($_FILES["fileToUpload"]["name"]);
@@ -28,8 +28,8 @@
             $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
             if($check !== false) {
                 if (file_exists($file)) {
-                    echo "<script> alert(\"File already exists.\"); </script>";
-                }else{
+                    // echo "<script> alert(\"File already exists.\"); </script>";
+                } else {
                     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $file)) {
                         unlink($oldFile);
                         $query = "UPDATE `spgallery` SET    `IdCategory`='$idCat',
@@ -55,10 +55,14 @@
         if($dataUpdate){
             $sql = mysqli_query($con, $query);
             if($sql){
-                echo "<script> success(); </script>";
-                header("Location: ?page=gallery");
+                  ?>
+                <script> 
+                    var url="index.php?page=gallery"; 
+                    success_update(url); 
+                </script>
+            <?php
             }
-        }else {
+        } else {
             echo "<script> alert(\"Data Failed to Update\"); </script>";
         }
     }

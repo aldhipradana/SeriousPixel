@@ -14,13 +14,15 @@
                 $_SESSION['pass']   = $data['Password'];
                 $_SESSION['nama']   = $data['Nama'];
                 $_SESSION['email']  = $data['Email']; 
-                $_SESSION['telp']  = $data['NoTelp']; 
+                $_SESSION['telp']   = $data['NoTelp']; 
                 $_SESSION['foto']   = $data['FotoUser'];
             }
             $_SESSION['login'] = "login";
+            // SET COOKIE UNTUK LOGIN TIME
+            // JADI KALO UDAH LEBIH DARI 1 JAM OTOMATIS WAKTU SESI HABIS DAN AKAN LOGOUT SECARA OTOMATIS
             setcookie("session_time", "login", time()+(60*60) );
+            // POPUP UNTUK WAKTU PERTAMA KALI LOGIN
             setcookie("popup", 1, time()+(10));
-
             return true; 
         } else {
             return false;
