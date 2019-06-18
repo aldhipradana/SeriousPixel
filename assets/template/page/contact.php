@@ -41,7 +41,6 @@
                 <tr>
                     <td>
                      <textarea  id="comment" cols="45" rows="8" name="message" placeholder="Your Message"></textarea>
-                        <span class="label">Your Message</span>
                     </label>
                     </td>
                 </tr>
