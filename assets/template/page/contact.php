@@ -10,37 +10,38 @@
                 <p>In the end,We hope that through our works couples will watch,see,and feel their special moments
                     in hight quality result.
                 </p>
-            <form action="">
+                <form action="assets\mail\kirim.php" method='post'>
                 <table>
                     <tbody>
                 <tr>
                     <td>
                     <label for="inp" class="inp">
-                        <input type="text" id="inp" placeholder="&nbsp;" name="Pengirim">
+                        <input type="text" id="inp" name="pengirim" placeholder="&nbsp;">
                         <span class="label">Your Name</span>
-                         <span class="border"></span>
-                    </label>
-                    <label for="inp" class="inp">
-                        <input type="textarea" id="inp" placeholder="&nbsp;" name="Message">
-                        <span class="label">Your Message</span>
                          <span class="border"></span>
                     </label>
                 </tr>
                     <td>
                     <label for="inp" class="inp">
-                        <input type="text" id="inp" placeholder="&nbsp;" name="Email">
+                        <input type="text" id="inp" name="phone"placeholder="&nbsp;">
+                        <span class="label">Phone</span>
+                         <span class="border"></span>
+                    </label>
+                    </td>
+                </tr>
+                </tr>
+                    <td>
+                    <label for="inp" class="inp">
+                        <input type="text" id="inp" name="email"placeholder="&nbsp;">
                         <span class="label">Email</span>
                          <span class="border"></span>
                     </label>
-                    
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    <label for="inp" class="inp">
-                        <input type="text" id="inp" placeholder="&nbsp;" name="Phone">
-                        <span class="label">Phone</span>
-                         <span class="border"></span>
+                     <textarea  id="comment" cols="45" rows="8" name="message" placeholder="Your Message"></textarea>
+                        <span class="label">Your Message</span>
                     </label>
                     </td>
                 </tr>
@@ -49,7 +50,7 @@
                     <input type="submit" value="Send" name="submit" id="comment-submit" class="button">
                     </td>
                 </tr>
-                
+             
                  </tbody>    
                  
                 </table>

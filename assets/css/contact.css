@@ -139,4 +139,23 @@ section.section-contact .row .column-1 .inp {
   .submit{
     padding-left: 15px;
   }
-  
+  section.section-contact .row .column-1 #comment {
+    width: 95%;
+    margin-left: 17px;
+  }
+
+  @media only screen and (max-width: 980px) {
+    section.section-contact .row .column-1{
+      width: 100%;
+   }
+  section.section-contact .row .column-2{
+      width: 100%;
+   }
+  section.section-contact {
+    margin:0px;
+    padding: 10px;
+    }
+    section.section-contact .row .column-1 .inp input{
+      margin-bottom: 20px;
+    }
+  }
