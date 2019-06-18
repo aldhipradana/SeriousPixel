@@ -15,7 +15,7 @@
             ?>
                 <script> 
                     var url="index.php?page=category"; 
-                    success_delete(url); 
+                    success_update(url); 
                 </script>
             <?php  
             }

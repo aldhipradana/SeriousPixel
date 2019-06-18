@@ -9,7 +9,7 @@
             ?>
             <script> 
                 var url="index.php?page=category";     
-                success_delete(url); 
+                success_add(url); 
             </script>
             <?php  
         }
